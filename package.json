@@ -1,0 +1,14 @@
+{
+  "name": "site-pessoal",
+  "version": "1.0.0",
+  "description": "Site pessoal e portfólio",
+  "scripts": {
+    "build": "npx @11ty/eleventy --input=client",
+    "start": "npx @11ty/eleventy --input=client --serve"
+  },
+  "author": "Rodrigo Thaler Knolseisen",
+  "license": "ISC",
+  "dependencies": {
+    "@11ty/eleventy": "^1.0.1"
+  }
+}

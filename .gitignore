@@ -1,0 +1,13 @@
+# Mac system files #
+.DS_Store
+.DS_Store?
+
+# NPM Files #
+node_modules
+/node_modules
+/node_modules/*
+
+# Rendered site #
+_site
+/_site
+/_site/*
