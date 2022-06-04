@@ -1,21 +1,41 @@
+/* General / Generics */
+::selection {
+  background: var(--color-highlight);
+}
+
+:root {
+  --font-size: 1rem;
+}
+
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  line-height: 1.5;
+  line-height: 1.6;
+  margin: 0;
+  color: var(--color-text-primary);
 }
 
+/* Typography */
 h1,
 .header__max {
   font-size: 3.75rem;
   font-weight: 900;
-  max-width: 20rem;
+  max-width: 26rem;
   line-height: 1.1;
+  background: linear-gradient(
+    90deg,
+    var(--color-blue-0),
+    var(--color-blue-10) 20%,
+    var(--color-green-20) 70%
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .header__big {
   font-size: 2.5rem;
   font-weight: 900;
-  max-width: 20rem;
+  max-width: 26rem;
   line-height: 1.1;
 }
 
@@ -30,10 +50,58 @@ h3,
 .header__small {
   font-size: 1.75rem;
   font-weight: 400;
+  color: var(--color-text-secondary);
 }
 
 h4,
 .subtitle {
   font-size: 1.5rem;
   font-weight: 400;
+  color: var(--color-text-secondary);
+}
+
+a:not(.button) {
+  cursor: pointer;
+  color: var(--color-anchor);
+  position: relative;
+  text-decoration: none;
+}
+
+a:not(.button):hover {
+  background: var(--color-highlight);
+  color: black;
+}
+
+a:not(.button):hover:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -3px;
+  width: 3px;
+  background: var(--color-highlight);
+}
+
+a:not(.button):hover:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: -3px;
+  width: 3px;
+  background: var(--color-highlight);
+}
+
+/* Content */
+.container {
+  width: 60rem;
+  max-width: 90vw;
+  margin: auto;
+  font-size: var(--font-size);
+}
+
+.container__text {
+  width: 45rem;
+  margin: initial;
+  --font-size: 18px;
 }
