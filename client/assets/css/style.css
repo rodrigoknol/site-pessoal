@@ -5,6 +5,8 @@
 
 :root {
   --font-size: 1rem;
+
+  --transition-default: 0.3s ease-in-out;
 }
 
 body {
@@ -23,7 +25,7 @@ h1,
   max-width: 26rem;
   line-height: 1.1;
   background: linear-gradient(
-    90deg,
+    135deg,
     var(--color-blue-0),
     var(--color-blue-10) 20%,
     var(--color-green-20) 70%
@@ -65,31 +67,29 @@ a:not(.button) {
   color: var(--color-anchor);
   position: relative;
   text-decoration: none;
+  transition: color var(--transition-default);
+  font-weight: 500;
 }
 
 a:not(.button):hover {
+  color: var(--color-text-secondary);
+}
+
+a:not(.button):before {
+  content: "";
+  position: absolute;
+  opacity: 0;
+  bottom: 0;
+  left: -2.5%;
+  width: 105%;
+  height: 25%;
   background: var(--color-highlight);
-  color: black;
+  z-index: -1;
+  transition: opacity var(--transition-default);
 }
 
 a:not(.button):hover:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: -3px;
-  width: 3px;
-  background: var(--color-highlight);
-}
-
-a:not(.button):hover:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: -3px;
-  width: 3px;
-  background: var(--color-highlight);
+  opacity: 1;
 }
 
 /* Content */
