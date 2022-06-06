@@ -1,37 +1,53 @@
 /* General / Generics */
-::selection {
-  background: var(--color-highlight);
-}
-
 :root {
-  --font-size: 1rem;
+  scroll-behavior: smooth;
 
+  /* Universal Variables */
+  --font-size: 1rem;
+  --base-size: 16px;
+  --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   --transition-default: 0.3s ease-in-out;
 }
 
+::selection,
+h1::selection {
+  background: var(--color-highlight);
+  color: var(--color-text-primary);
+  background-clip: initial;
+  -webkit-text-fill-color: initial;
+}
+
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: var(--font-family);
   line-height: 1.6;
   margin: 0;
   color: var(--color-text-primary);
 }
 
 /* Typography */
+p {
+  font-size: 1.125rem;
+}
+
+h1 {
+  background: linear-gradient(
+    45deg,
+    var(--color-blue-0),
+    var(--color-blue-20) 60%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
 h1,
 .header__max {
   font-size: 3.75rem;
   font-weight: 900;
   max-width: 26rem;
   line-height: 1.1;
-  background: linear-gradient(
-    135deg,
-    var(--color-blue-0),
-    var(--color-blue-10) 20%,
-    var(--color-green-20) 70%
-  );
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 .header__big {
@@ -39,6 +55,7 @@ h1,
   font-weight: 900;
   max-width: 26rem;
   line-height: 1.1;
+  font-family: var(--font-family);
 }
 
 h2,
@@ -53,6 +70,8 @@ h3,
   font-size: 1.75rem;
   font-weight: 400;
   color: var(--color-text-secondary);
+  font-family: "Volkorn", var(--font-family);
+  line-height: 1.2;
 }
 
 h4,
@@ -60,6 +79,8 @@ h4,
   font-size: 1.5rem;
   font-weight: 400;
   color: var(--color-text-secondary);
+  font-family: "Volkorn", var(--font-family);
+  line-height: 1.2;
 }
 
 a:not(.button) {
@@ -69,6 +90,7 @@ a:not(.button) {
   text-decoration: none;
   transition: color var(--transition-default);
   font-weight: 500;
+  z-index: 1;
 }
 
 a:not(.button):hover {
@@ -78,21 +100,87 @@ a:not(.button):hover {
 a:not(.button):before {
   content: "";
   position: absolute;
-  opacity: 0;
+  filter: opacity(0);
   bottom: 0;
   left: -2.5%;
   width: 105%;
   height: 25%;
   background: var(--color-highlight);
+  transition: filter var(--transition-default);
   z-index: -1;
-  transition: opacity var(--transition-default);
 }
 
 a:not(.button):hover:before {
-  opacity: 1;
+  filter: opacity(1);
 }
 
 /* Content */
+.card {
+  background-color: white;
+  border-radius: calc(0.75 * var(--base-size));
+  padding: calc(2.5 * var(--base-size));
+  box-shadow: 0.3rem 0.3rem 1.5rem 1px var(--shadow);
+  box-sizing: border-box;
+}
+
+.card--with-image {
+  display: flex;
+  gap: var(--base-size);
+}
+
+.card--with-image > * {
+  flex: 1 1 0;
+}
+
+.card--with-image > img {
+  flex: 2;
+}
+
+.carousel__parent {
+  margin: 7rem 0 10rem 0;
+  position: relative;
+  perspective: 1000px;
+}
+
+.carousel {
+  transform-style: preserve-3d;
+  transition: transform 1.2s;
+  height: 100%;
+  width: 100%;
+}
+
+.carousel__cell {
+  position: absolute;
+  width: 100%;
+  transition: transform 1.2s;
+  box-sizing: border-box;
+  backface-visibility: hidden;
+}
+
+.carousel__controller {
+  position: absolute;
+  right: calc(-4 * var(--base-size));
+  top: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.carousel__controller > * {
+  flex: 2;
+  font-size: 2rem;
+  background-color: initial;
+  color: var(--color-anchor);
+  border: none;
+  cursor: pointer;
+  transition: color var(--transition-default);
+}
+
+.carousel__controller > *:hover {
+  color: var(--color-blue-20);
+}
+
 .container {
   width: 60rem;
   max-width: 90vw;
@@ -100,8 +188,51 @@ a:not(.button):hover:before {
   font-size: var(--font-size);
 }
 
-.container__text {
+.container--small {
   width: 45rem;
-  margin: initial;
-  --font-size: 18px;
+}
+
+.container--small p:first-of-type::first-letter {
+  float: left;
+  font-weight: 900;
+  font-size: 5.5rem;
+  line-height: 1;
+  margin: 0.25rem 0.5rem -0.5rem 0;
+  font-family: "Volkorn", var(--font-family);
+}
+
+.container--smallest {
+  width: 26rem;
+}
+
+.molding {
+  background: var(--color-blue-50);
+  margin: 1rem;
+  margin-bottom: 0;
+  padding: 1rem;
+  height: calc(100vh - 4.5rem);
+  box-sizing: border-box;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+nav {
+  position: sticky;
+  padding: var(--base-size);
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(255, 255, 255, 0.6);
+  -webkit-backdrop-filter: blur(calc(0.3 * var(--base-size)));
+  backdrop-filter: blur(calc(0.3 * var(--base-size)));
+  z-index: 99;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 2rem;
 }

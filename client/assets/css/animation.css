@@ -1,0 +1,39 @@
+.animateUpAndDown {
+  animation: MoveUpDown 1s ease-in-out infinite;
+}
+
+.animateWave {
+  animation: Wave 2s 3s infinite;
+  transform-origin: 70% 80%;
+  display: inline-block;
+  color: initial;
+  background-clip: initial;
+  -webkit-text-fill-color: initial;
+}
+
+@keyframes MoveUpDown {
+  0%,
+  100% {
+    bottom: -0.3rem;
+  }
+  50% {
+    bottom: 0.3rem;
+  }
+}
+
+@keyframes Wave {
+  0%,
+  60%,
+  100% {
+    transform: rotate(0deg);
+  }
+  10%,
+  30%,
+  50% {
+    transform: rotate(16deg);
+  }
+  20%,
+  40% {
+    transform: rotate(-6deg);
+  }
+}

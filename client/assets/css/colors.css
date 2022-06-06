@@ -11,6 +11,7 @@
   --color-blue-20: rgb(120, 120, 235);
   --color-blue-30: rgb(160, 160, 245);
   --color-blue-40: rgb(200, 200, 255);
+  --color-blue-50: rgb(240, 240, 255);
 
   --color-yellow-0: rgb(255, 200, 40);
   --color-yellow-10: rgb(255, 210, 80);
@@ -28,5 +29,8 @@
   --color-text-primary: var(--color-base-0);
   --color-text-secondary: var(--color-base-10);
   --color-anchor: var(--color-blue-0);
-  --color-highlight: var(--color-yellow-10);
+  --color-highlight: var(--color-yellow-0);
+
+  /* Shadow */
+  --shadow: rgba(40, 40, 60, 0.1);
 }
