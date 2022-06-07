@@ -118,7 +118,7 @@ a:not(.button):hover:before {
 .card {
   background-color: white;
   border-radius: calc(0.75 * var(--base-size));
-  padding: calc(2.5 * var(--base-size));
+  padding: 8rem calc(2.5 * var(--base-size));
   box-shadow: 0.3rem 0.3rem 1.5rem 1px var(--shadow);
   box-sizing: border-box;
 }
@@ -207,7 +207,7 @@ a:not(.button):hover:before {
 
 .molding {
   background: var(--color-blue-50);
-  margin: 1rem;
+  margin: var(--base-size);
   margin-bottom: 0;
   padding: 1rem;
   height: calc(100vh - 4.5rem);

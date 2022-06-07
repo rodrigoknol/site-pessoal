@@ -1,93 +1,10 @@
-{% extends "header.html" %} {% block body %}
-<header class="molding">
-  <article class="container container--smallest">
-    <h1>Olá! Sou o Rodrigo Knolseisen <span class="animateWave">👋</span></h1>
-    <p>
-      Designer -
-      <em><b>U</b>ser e<b>X</b>perience e <b>U</b>ser <b>I</b>nterface</em> - e
-      desenvolvedor. Faço sites e bons risotos, também desenho apps. Entusiasta
-      de
-      <a
-        href="https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps"
-        target="_blank"
-        title="Progressive web apps"
-        >PWAs</a
-      >.
-    </p>
-    <p>
-      Desça a página para descobrir mais.
-      <a class="animateUpAndDown" href="#projects">▼</a>
-    </p>
-  </article>
-</header>
-<nav>
-  <ul>
-    <li><a href="/">Início</a></li>
-  </ul>
-  <ul>
-    <li>Nessa página:</li>
-    <li><a href="#projects">Projetos</a></li>
-    <li><a href="#process">Meus Processos</a></li>
-    <li><a href="#blog">Anotações e Pensamentos</a></li>
-    <li><a href="#contact">Contato</a></li>
-  </ul>
-</nav>
+{% extends "header.html" %} {% block body %} {% include "organisms/molding.html"
+%} {% include "organisms/nav.html" %}
+
 <main>
   <section id="projects" class="container">
     <h2 class="header__max">Projetos</h2>
-    <div class="carousel__parent">
-      <div class="carousel__controller">
-        <button id="carouselNext">▲</button>
-        <button id="carouselPrevious">▼</button>
-      </div>
-      <div class="carousel">
-        <div class="carousel__cell card card--with-image">
-          <article class="container--smallest">
-            <h3 class="header__big">Título do projeto</h3>
-            <h4>Subtitulo com algum sumario / explicacao</h4>
-            <a>Ver mais detalhes</a>
-          </article>
-          <img src="" alt="texto da imagem" />
-        </div>
-
-        <div class="carousel__cell card card--with-image">
-          <article class="container--smallest">
-            <h3 class="header__big">Título do projeto</h3>
-            <h4>Subtitulo com algum sumario / explicacao</h4>
-            <a>Ver mais detalhes</a>
-          </article>
-          <img src="" alt="texto da imagem" />
-        </div>
-
-        <div class="carousel__cell card card--with-image">
-          <article class="container--smallest">
-            <h3 class="header__big">Título do projeto</h3>
-            <h4>Subtitulo com algum sumario / explicacao</h4>
-            <a>Ver mais detalhes</a>
-          </article>
-          <img src="" alt="texto da imagem" />
-        </div>
-
-        <div class="carousel__cell card card--with-image">
-          <article class="container--smallest">
-            <h3 class="header__big">Título do projeto</h3>
-            <h4>Subtitulo com algum sumario / explicacao</h4>
-            <a>Ver mais detalhes</a>
-          </article>
-          <img src="" alt="texto da imagem" />
-        </div>
-
-        <div class="carousel__cell card card--with-image">
-          <article class="container--smallest">
-            <h3 class="header__big">Título do projeto</h3>
-            <h4>Subtitulo com algum sumario / explicacao</h4>
-            <a>Ver mais detalhes</a>
-          </article>
-          <img src="" alt="texto da imagem" />
-        </div>
-      </div>
-    </div>
-    <script async src="/js/carousel.js"></script>
+    {% include "organisms/carousel.html" %}
   </section>
   <section id="process" class="container">
     <h2 class="header__max">Meus Processos</h2>
@@ -98,16 +15,5 @@
     <div>Espaço para Tags</div>
     <div>Componente para seleção de texto</div>
   </section>
-  <section id="contact" class="container">
-    <h2 class="header__max">Contato</h2>
-    <p>
-      Você pode conhecer mais sobre a minha carreira no meu
-      <a href="linkedin.com/in/rodrigoknolseisen/" target="_blank">Linkedin</a>,
-      ver alguns dos meus trabalhos de desenvolvimento no meu
-      <a href="github.com/rodrigoknol" target="_blank">Github</a> ou mandar uma
-      mensagem no meu <a href="mailto:FAZEROEMAIL">email</a>.
-    </p>
-    <p>Se estiver por Floripa - a ilha da magia - dê um alô.</p>
-  </section>
 </main>
-{% endblock %}
+{% include "organisms/footer.html" %} {% endblock %}
