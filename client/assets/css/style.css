@@ -23,6 +23,7 @@ body {
   line-height: 1.6;
   margin: 0;
   color: var(--color-text-primary);
+  background-color: var(--background);
 }
 
 /* Typography */
@@ -44,24 +45,24 @@ h1 {
 
 h1,
 .header__max {
-  font-size: 3.75rem;
+  font-size: 4rem;
   font-weight: 900;
-  max-width: 26rem;
+  max-width: 28rem;
   line-height: 1.1;
 }
 
 .header__big {
   font-size: 2.5rem;
   font-weight: 900;
-  max-width: 26rem;
+  max-width: 28rem;
   line-height: 1.1;
   font-family: var(--font-family);
 }
 
 h2,
 .header__medium {
-  font-size: 2rem;
-  font-weight: 500;
+  font-size: 2.25rem;
+  font-weight: 600;
   line-height: 1.2;
 }
 
@@ -115,6 +116,58 @@ a:not(.button):hover:before {
 }
 
 /* Content */
+.article {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.article > aside {
+  flex: 1 1 0;
+}
+
+aside {
+  position: sticky;
+  top: 0;
+  padding: 0 2rem;
+  color: var(--color-text-secondary);
+  box-sizing: border-box;
+}
+
+.aside--navigation{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.aside--navigation > *{
+  display: inherit;
+}
+
+.aside--navigation a:not(.button){
+  padding: 0.5rem 1rem;
+  width: 100%;
+  transition: background-color var(--transition-default);
+}
+
+.aside--navigation a:not(.selected):hover{
+  background-color: var(--color-blue-50);
+  color: var(--color-blue-0);
+}
+
+.aside--navigation a:not(.button):hover:before{
+  display: none;
+}
+
+.aside--navigation a.selected{
+  background-color: var(--color-yellow-40);
+  color: var(--color-base-0);
+}
+
 .card {
   background-color: white;
   border-radius: calc(0.75 * var(--base-size));
@@ -185,11 +238,10 @@ a:not(.button):hover:before {
   width: 60rem;
   max-width: 90vw;
   margin: auto;
-  font-size: var(--font-size);
 }
 
 .container--small {
-  width: 45rem;
+  width: 42rem;
 }
 
 .container--small p:first-of-type::first-letter {
@@ -202,7 +254,7 @@ a:not(.button):hover:before {
 }
 
 .container--smallest {
-  width: 26rem;
+  width: 28rem;
 }
 
 .molding {
@@ -210,7 +262,7 @@ a:not(.button):hover:before {
   margin: var(--base-size);
   margin-bottom: 0;
   padding: 1rem;
-  height: calc(100vh - 4.5rem);
+  min-height: calc(100vh - 4.5rem);
   box-sizing: border-box;
   display: flex;
   align-content: center;
@@ -223,10 +275,11 @@ nav {
   top: 0;
   display: flex;
   justify-content: space-between;
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: var(--background-transparent);
   -webkit-backdrop-filter: blur(calc(0.3 * var(--base-size)));
   backdrop-filter: blur(calc(0.3 * var(--base-size)));
   z-index: 99;
+  border-bottom: 2px solid var(--color-blue-50);
 }
 
 nav ul {
@@ -235,4 +288,37 @@ nav ul {
   margin: 0;
   display: flex;
   gap: 2rem;
+}
+
+.nudge a{
+  background-color: var(--color-anchor);
+  width: 100%;
+  display: inline-block;
+  color: var(--background);
+  text-align: center;
+  transition: background var(--transition-default);
+}
+
+.nudge a:hover{
+  background-color: var(--color-blue-10);
+  color: var(--background);
+}
+
+.nudge a:hover:before{
+  display: none;
+}
+
+.tag {
+  background-color: var(--color-blue-20);
+  padding: 0.25rem 0.5rem;
+  line-height: 1;
+  border-radius: 1rem;
+  color: white;
+}
+
+.tag--container{
+  margin: 1rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
 }

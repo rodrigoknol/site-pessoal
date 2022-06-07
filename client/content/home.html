@@ -1,5 +1,11 @@
-{% extends "header.html" %} {% block body %} {% include "organisms/molding.html"
-%} {% include "organisms/nav.html" %}
+---
+title: Portfólio do Rodrigo Knolseisen
+layout: header.html
+permalink: "/"
+---
+
+{% include "organisms/molding.html"%} 
+{% include "organisms/nav.html" %}
 
 <main>
   <section id="projects" class="container">
@@ -16,4 +22,5 @@
     <div>Componente para seleção de texto</div>
   </section>
 </main>
-{% include "organisms/footer.html" %} {% endblock %}
+
+{% include "organisms/footer.html" %}

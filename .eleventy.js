@@ -4,8 +4,4 @@ module.exports = function (eleventyConfig) {
       passthroughFileCopy: true,
     };
   });
-
-  return {
-    htmlTemplateEngine: "njk",
-  };
 };
