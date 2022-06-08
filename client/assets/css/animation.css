@@ -3,7 +3,7 @@
 }
 
 .animateWave {
-  animation: Wave 2s 3s infinite;
+  animation: Wave 2s 1s infinite;
   transform-origin: 70% 80%;
   display: inline-block;
   color: initial;
@@ -23,17 +23,17 @@
 
 @keyframes Wave {
   0%,
-  60%,
+  50%,
   100% {
     transform: rotate(0deg);
   }
   10%,
-  30%,
-  50% {
+  25%,
+  40% {
     transform: rotate(16deg);
   }
-  20%,
-  40% {
+  17.5%,
+  30% {
     transform: rotate(-6deg);
   }
 }

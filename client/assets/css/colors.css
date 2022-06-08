@@ -32,6 +32,10 @@
   --color-anchor: var(--color-blue-0);
   --color-highlight: var(--color-yellow-0);
 
+  /* System */
+  --color-primary: var(--color-blue-10);
+  --color-primary-40: var(--color-blue-40);
+
   /* Shadow */
   --shadow: rgba(40, 40, 60, 0.1);
 

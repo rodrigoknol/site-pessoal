@@ -1,18 +1,13 @@
 <aside>
-  <p>
-    <span>Você está lendo</span>
-    <br />
-    <strong>Titulo da Pagina</strong>
-  </p>
-  <span>xx minutos de leitura</span>
+  <p><strong>{{title}}</strong></p>
   <div class="tag--container">
     <span class="tag">Design</span>
     <span class="tag">Desenvolvimento</span>
     <span class="tag">Assunto</span>
   </div>
-  <ul class="aside--navigation">
-    <li><a class="selected" href="#">Título de sessão</a></li>
-    <li><a href="#">Título de sessão</a></li>
-    <li><a href="#">Título de sessão</a></li>
-  </ul>
+  <strong>Nessa página</strong>
+  <section class="aside--navigation-holder">
+    <ul id="navigation" class="aside--navigation"></ul>
+  </section>
 </aside>
+<script defer src="/js/aside.js"></script>
