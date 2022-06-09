@@ -1,9 +1,9 @@
 <aside>
   <p><strong>{{title}}</strong></p>
   <div class="tag--container">
-    <span class="tag">Design</span>
-    <span class="tag">Desenvolvimento</span>
-    <span class="tag">Assunto</span>
+    {% for tag in tags %}
+    {% include "atoms/tag.html" %}
+    {% endfor %}
   </div>
   <strong>Nessa página</strong>
   <section class="aside--navigation-holder">

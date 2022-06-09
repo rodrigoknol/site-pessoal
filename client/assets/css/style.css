@@ -36,6 +36,10 @@ p {
   margin-bottom: 1.6rem;
 }
 
+p:last-child {
+  margin-bottom: 0;
+}
+
 h1,
 h2,
 h3,
@@ -197,12 +201,16 @@ aside {
   color: var(--color-base-0);
 }
 
+button {
+  cursor: pointer;
+}
+
 .card {
   background-color: white;
   border-radius: 1.5rem;
-  padding: 8rem calc(2.5 * var(--base-size));
   box-shadow: 0.3rem 0.3rem 1.5rem 1px var(--shadow);
   box-sizing: border-box;
+  padding: 2rem 1rem;
 }
 
 .card--with-image {
@@ -237,6 +245,7 @@ aside {
   transition: transform 1.2s;
   box-sizing: border-box;
   backface-visibility: hidden;
+  padding: 8rem calc(2.5 * var(--base-size));
 }
 
 .carousel__controller {
@@ -287,7 +296,11 @@ aside {
   width: 28rem;
 }
 
-img{
+footer {
+  padding-bottom: 1rem;
+}
+
+img {
   width: 100%;
 }
 
@@ -296,7 +309,7 @@ img{
   margin: var(--base-size);
   margin-bottom: 0;
   padding: 1rem;
-  min-height: calc(100vh - 4.5rem);
+  min-height: calc(100vh - 5rem);
   box-sizing: border-box;
   display: flex;
   align-content: center;
@@ -355,7 +368,7 @@ th {
   text-align: left;
 }
 
-th{
+th {
   font-weight: 500;
 }
 
@@ -367,15 +380,24 @@ th:first-child {
   -webkit-backdrop-filter: blur(calc(0.3 * var(--base-size)));
   backdrop-filter: blur(calc(0.3 * var(--base-size)));
   min-width: 12rem;
-  border-right: 2px solid var(--color-primary-40);
 }
 
 .tag {
   background-color: var(--color-base-40);
-  padding: 0.25rem 0.5rem;
+  padding: 0.25rem 0.75rem;
+  font-weight: 500;
   line-height: 1;
   border-radius: 1rem;
   color: var(--color-text-secondary);
+}
+
+.tag__design {
+  background: var(--color-blue-10);
+  color: var(--color-base-55);
+}
+
+.tag__desenvolvimento {
+  background: var(--color-green-30);
 }
 
 .tag--container {
@@ -394,15 +416,22 @@ ul > li {
 }
 
 /* Helpers */
-.full-width {
-  width: 100%;
-  max-width: 100%;
-}
-
 .background__primary {
   background-color: var(--color-primary);
 }
 
 .background__primary-40 {
   background-color: var(--color-primary-40);
+}
+
+.full-width {
+  width: 100%;
+  max-width: 100%;
+}
+
+.no-style {
+  border: inherit;
+  background: inherit;
+  padding: 0;
+  margin: 0;
 }

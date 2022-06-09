@@ -1,0 +1,6 @@
+<article class="card">
+  {% for tag in post.data.tags %} {% if tag != "artigo" %} {% include
+  "atoms/tag.html" %} {% endif %} {% endfor %}
+  <h3>{{post.data.title}}</h3>
+  <p><a href="{{ post.url }}">Ler agora</a></p>
+</article>
