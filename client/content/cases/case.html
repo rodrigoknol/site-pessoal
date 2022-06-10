@@ -1,6 +1,9 @@
 ---
 title: Projeto
 layout: header.html
+tags:
+ - design
+ - desenvolvimento
 ---
 
 {% include "atoms/nudge.html" %}
@@ -9,6 +12,9 @@ layout: header.html
     <section class="container--smallest">
       <h1>Título do projeto</h1>
       <h2 class="subtitle">Subtitulo com algum sumario / explicacao</h2>
+      {% for tag in tags %} 
+        {% include "atoms/tag.html" %} 
+      {% endfor %}
       <p>
         Bacon ipsum dolor amet pancetta andouille meatball boudin picanha salami
         shank meatloaf turducken capicola turkey ribeye chicken. Shankle ball

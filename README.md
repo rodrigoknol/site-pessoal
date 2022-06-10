@@ -1,4 +1,4 @@
-# Site Pessoal do Rodrigo Knolseisen
+# Meu site pessoal / Portfólio
 
 ## Instalação
 
