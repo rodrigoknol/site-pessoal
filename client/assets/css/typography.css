@@ -1,5 +1,109 @@
-@font-face {
-  font-family: "Volkorn";
+p,
+li {
+  font-size: 1.2rem;
+}
+
+p {
+  margin-bottom: 1.6rem;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+.header__max,
+.header__big,
+.header__medium,
+.header__small,
+.subtitle {
+  margin-top: 3.2rem;
+  margin-bottom: 1.6rem;
+}
+
+h1 {
+  background: linear-gradient(
+    45deg,
+    var(--color-blue-0),
+    var(--color-blue-20) 60%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+h1,
+.header__max {
+  font-size: 4.1rem;
+  font-weight: 900;
+  max-width: 28rem;
+  line-height: 1.1;
+}
+
+.header__big {
+  font-size: 2.5rem;
+  font-weight: 900;
+  max-width: 28rem;
+  line-height: 1.1;
+  font-family: var(--font-family);
+}
+
+h2,
+.header__medium {
+  font-size: 2.25rem;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+h3,
+.header__small {
+  font-size: 1.75rem;
+  font-weight: 400;
+  color: var(--color-text-secondary);
+  font-family: "Volkorn", var(--font-family);
+  line-height: 1.2;
+}
+
+h4,
+.subtitle {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--color-text-secondary);
+  font-family: "Volkorn", var(--font-family);
+  line-height: 1.2;
+}
+
+a:not(.button) {
+  cursor: pointer;
+  color: var(--color-anchor);
+  position: relative;
+  text-decoration: none;
+  transition: color var(--transition-default);
   font-weight: 500;
-  src: url("/font/Vollkorn-Medium.ttf") format("truetype");
+  z-index: 1;
+}
+
+a:not(.button):hover {
+  color: var(--color-text-secondary);
+}
+
+a:not(.button):before {
+  content: "";
+  position: absolute;
+  filter: opacity(0);
+  bottom: 0;
+  left: -2.5%;
+  width: 105%;
+  height: 25%;
+  background: var(--color-highlight);
+  transition: filter var(--transition-default);
+  z-index: -1;
+}
+
+a:not(.button):hover:before {
+  filter: opacity(1);
 }

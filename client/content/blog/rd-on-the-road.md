@@ -9,9 +9,9 @@ tags:
   - artigo
 ---
 
-![Imagem da primeira dobra do site RD On the Road 2017](/image/blog/rd-on-the-road-cover.jpeg)
-
 No começo de 2017, recebi o desafio de desenvolver as páginas do site do evento itinerante da [Resultados Digitais](https://resultadosdigitais.com.br/), o [RD On The Road](https://www.rdontheroad.com/). Já foi o terceiro ano do evento, que em 2017 alcançou mais de 5500 participantes em 11 cidades espalhadas por todas as regiões do Brasil. E, junto com a nova edição, veio o terceiro projeto dos sites.
+
+![Imagem da primeira dobra do site RD On the Road 2017](/image/blog/rd-on-the-road-cover.jpeg)
 
 Em 2015, foi criado o primeiro site para a primeira edição do On The Road. Na época, a equipe que desenvolveu tanto o site quanto a identidade visual era bem enxuta: apenas uma pessoa. Isso porque o marketing da Resultados Digitais tinha somente um designer e o OTR 2015 foi um dos vários projetos que tiveram que ser desenvolvidos ao mesmo tempo.
 
