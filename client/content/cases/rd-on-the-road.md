@@ -11,7 +11,7 @@ tags:
  - projeto
 ---
 ## Como foi resolvido
-Com o cronograma difícil, o mais importante foi antes afiar a faca duas vezes, para depois cortar - planejamento e contenção de riscos. O cronograma foi dividido nas etapas apresentadas abaixo, utilizando o [Double Diamond como um framework de projeto e inovação](/#process):
+Com o cronograma difícil, o mais importante foi antes afiar a faca duas vezes, para depois cortar - planejamento e contenção de riscos. O cronograma foi dividido nas etapas apresentadas abaixo, utilizando o Double Diamond como um [framework de projeto e inovação](/#process):
 
 ### <img src="/image/icons/double_diamond-empty.svg" class="icon" /> Pré projeto
 - Briefing

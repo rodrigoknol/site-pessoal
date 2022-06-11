@@ -10,7 +10,7 @@ tags:
 
 No começo de 2017, recebi o desafio de desenvolver as páginas do site do evento itinerante da [Resultados Digitais](https://resultadosdigitais.com.br/), o [RD On The Road](https://www.rdontheroad.com/). Já foi o terceiro ano do evento, que em 2017 alcançou mais de 5500 participantes em 11 cidades espalhadas por todas as regiões do Brasil. E, junto com a nova edição, veio o terceiro projeto dos sites.
 
-![Imagem da primeira dobra do site RD On the Road 2017](/image/blog/rd-on-the-road-cover.jpeg)
+![Imagem da primeira dobra do site RD On the Road 2017](/image/blog/rd-on-the-road-cover.jpg)
 
 Em 2015, foi criado o primeiro site para a primeira edição do On The Road. Na época, a equipe que desenvolveu tanto o site quanto a identidade visual era bem enxuta: apenas uma pessoa. Isso porque o marketing da Resultados Digitais tinha somente um designer e o OTR 2015 foi um dos vários projetos que tiveram que ser desenvolvidos ao mesmo tempo.
 
@@ -144,7 +144,7 @@ Outro ponto levado em consideração foi o uso de palavras-chave com bom volume 
 
 Como o grande objetivo das páginas que estão sendo feitas é vender o evento, foram utilizadas técnicas de CRO - Conversion rate optimization - para otimizar as páginas.
 
-![Imagem da proposta de sitemap do RD On the Road 2017](/image/blog/rd-on-the-road-sitemap.jpeg)
+![Imagem da proposta de sitemap do RD On the Road 2017](/image/blog/rd-on-the-road-sitemap.jpg)
 
 Nessa etapa, o conteúdo previsto do site foi validado diversas vezes com diferentes pessoas. Aproveitei a experiência do time de design da RD e consegui bastante insights e feedbacks com todos. Também colhi feedbacks com o time de eventos da RD, até chegar a um resultado final otimizado e alinhado com todos os objetivos do projeto e dos principais responsáveis diretos ou indiretos pelo projeto RD On The Road.
 
@@ -156,11 +156,11 @@ A ferramenta utilizada nessa etapa foi o [Figma](https://www.figma.com/). Na ép
 
 Além de ser gratuito e de poder ser utilizado em praticamente qualquer computador direto do navegador, para essa etapa (wireframes) o Figma funcionou muito bem.
 
-![Wireframe do RD On the Road no Figma](/image/blog/rd-on-the-road-wireframe.jpeg)
+![Wireframe do RD On the Road no Figma](/image/blog/rd-on-the-road-wireframe.jpg)
 
 Aqui foram prototipados o layout da página inicial, um layout padrão genérico para cidades e mais um layout para a página de perguntas e downloads.
 
-![Wireframe do RD On the Road com zoom na proposta da página de cidade](/image/blog/rd-on-the-road-grid.jpeg)
+![Wireframe do RD On the Road com zoom na proposta da página de cidade](/image/blog/rd-on-the-road-grid.jpg)
 
 O wireframe passou por diversas iterações. Inicialmente, foi trabalhado com o layout mais genérico possível, porém, no final dessa etapa, algumas soluções de layout já começaram a ser testadas neles, como o fundo escuro, a hierarquia da tipografia e a sessão de palestrante destaque — todos destacados na imagem acima.
 
@@ -168,17 +168,17 @@ O wireframe passou por diversas iterações. Inicialmente, foi trabalhado com o 
 
 O desenvolvimento do layout do site começou em uma seção de pair design com a designer responsável por criar a marca do RD On The Road 2017.
 
-![Algumas imagens e desenhos resultados da sessão de pair design](/image/blog/rd-on-the-road-co-creation.jpeg)
+![Algumas imagens e desenhos resultados da sessão de pair design](/image/blog/rd-on-the-road-co-creation.jpg)
 
 Nessa sessão de 1h30min, nós nos dividimos em dois papéis: o de gerador e o de sintetizador. Enquanto um designer (o gerador, papel pelo qual fui responsável) trabalhava criando soluções visuais para o projeto, o outro (a [Thaís](https://www.linkedin.com/in/thaissprada/), designer responsável pela Identidade Visual do evento) apontava o caminho que considerava o melhor para seguir, os locais em que o layout estava fugindo da identidade planejada e onde estava sendo bem desenvolvido.
 
 Por ser uma reunião relativamente curta, o tempo foi utilizado para trabalhar nas seções mais complexas do site, que poderiam servir de base para o restante do layout.
 
-![Um dos primeiros testes da primeira dobra — a primeira parte do site que aparece quando ele carrega no navegador do usuário — das páginas de cidade.](/image/blog/rd-on-the-road-banner-v0.jpeg)
+![Um dos primeiros testes da primeira dobra — a primeira parte do site que aparece quando ele carrega no navegador do usuário — das páginas de cidade.](/image/blog/rd-on-the-road-banner-v0.jpg)
 
 Muito do que foi desenvolvido nessa etapa acabou não chegando no site final, porém ajudou a desenvolver mais a identidade visual e a mostrar caminhos interessantes para onde ela deve ir e também para onde alguns elementos não funcionariam bem.
 
-![Protótipo de média fidelidade da sessão de destinos.](/image/blog/rd-on-the-road-prototype.jpeg)
+![Protótipo de média fidelidade da sessão de destinos.](/image/blog/rd-on-the-road-prototype.jpg)
 
 Como visto na imagem acima, alguns layouts testados ainda mudaram bastante durante o projeto. Essa tela foi um dos primeiros testes da seção de seleção de cidades na home em que o retângulo cinza à direita representa o mapa; o retângulo branco ao fundo, alguma imagem; e o retângulo azul à esquerda, o menu.
 
@@ -186,13 +186,13 @@ Como visto na imagem acima, alguns layouts testados ainda mudaram bastante duran
 
 A próxima microetapa dentro do desenvolvimento de layout foi a criação de um style guide para o projeto, que se misturou com a etapa de desenvolvimento de código. Foi o primeiro momento em que as ideias desenvolvidas para o projeto começaram a ser visualizadas na tela de um navegador.
 
-![Style-guide sendo renderizado pelo navegador.](/image/blog/rd-on-the-road-style.jpeg)
+![Style-guide sendo renderizado pelo navegador.](/image/blog/rd-on-the-road-style.jpg)
 
 No style guide foram apresentados os estilos base para serem usados no projeto. Foi muito importante o desenvolvimento deste guia para a criação de um layout coeso e que faça sentido como um todo, em todas as páginas e seções.
 
 Aqui a tipografia foi padronizada e testada — nas primeiras versões do site, o parágrafo base era feito na fonte Source Sans com tamanho de 16px, mas, depois de alguns testes em diversos dispositivos nessa etapa, em especial pelo contraste entre o fundo preto e o texto, o tamanho foi trocado para 17px.
 
-![Exemplo de sessão com o uso de diversos pesos de fonte.](/image/blog/rd-on-the-road-dev.jpeg)
+![Exemplo de sessão com o uso de diversos pesos de fonte.](/image/blog/rd-on-the-road-dev.jpg)
 
 Tudo foi desenvolvido aqui considerando o resultado final — não apenas visual, mas também a parte de desenvolvimento. O código foi escrito pensando na versão final do site, na modularidade do código e em uma sintaxe bem feita.
 
@@ -200,7 +200,7 @@ Tudo foi desenvolvido aqui considerando o resultado final — não apenas visual
 
 Quando a etapa de desenvolvimento de código começou, o primeiro trabalho foi pegar os blocos de código criados na etapa anterior e organizá-los dentro da estrutura prevista para o site na fase de arquitetura da informação e de desenvolvimento do layout.
 
-![Editor de texto aberto com códigos do site sendo mostrados.](/image/blog/rd-on-the-road-code.jpeg)
+![Editor de texto aberto com códigos do site sendo mostrados.](/image/blog/rd-on-the-road-code.jpg)
 
 Um dos maiores desafios dessa etapa foi desenvolver o site com diversas seções sem, algumas vezes, o conteúdo final. O conteúdo foi chegando aos poucos e depois ainda foi iterado com o tempo para manter o site o mais otimizado possível.
 
@@ -220,7 +220,7 @@ Essa não foi a etapa mais difícil, mas foi a mais trabalhosa. Depois de desenv
 
 Quem não acha muito chato sites que não carregam parte do conteúdo, que possuem imagens estourando para fora da tela ou que têm janelas que deveriam abrir mas não abrem, dentre outros problemas?
 
-![Imagem demonstrando bug no carregamento de uma tabela em um dispositivo móvel.](/image/blog/rd-on-the-road-bug.jpeg)
+![Imagem demonstrando bug no carregamento de uma tabela em um dispositivo móvel.](/image/blog/rd-on-the-road-bug.jpg)
 
 Bom, HTML/CSS nem sempre se comportam igualmente em todos os sistemas ou simplesmente partes deles nem funcionam em alguns. Assegurar que o site funcione de forma otimizada para todos os usuários é muito importante para garantir uma ótima experiência para os visitantes.
 
@@ -234,7 +234,7 @@ Com o site pronto e testado, a última etapa foi a instalação de ferramentas d
 
 Para aproveitar ainda mais o potencial do Google Analytics, foram desenvolvidos eventos no site. A grande maioria foi para mensurar os resultados de cada um dos botões de Call-to-Action que levam o usuário ao site da venda de ingressos. O objetivo de mensurar esses dados é saber qual botão e/ou área do site trabalha melhor na conversão dos usuários para compra e quais tem mais espaço para melhora. O Hotjar também foi instalado.
 
-![Site com tags de Analytics que estavam presentes no site do OTR no dia do lançamento do evento.](/image/blog/rd-on-the-road-tags.jpeg)
+![Site com tags de Analytics que estavam presentes no site do OTR no dia do lançamento do evento.](/image/blog/rd-on-the-road-tags.jpg)
 
 ## E o cronograma, foi respeitado?
 

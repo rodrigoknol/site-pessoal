@@ -193,12 +193,12 @@ footer {
   padding-bottom: 1rem;
 }
 
-.header--case{
-  margin-bottom: 2rem;
+.header--case {
+  margin-bottom: 5rem;
   min-height: 100vh;
 }
 
-.header__image-container{
+.header__image-container {
   background: var(--color-yellow-40);
   position: absolute;
   right: 0;
@@ -211,7 +211,7 @@ footer {
   align-items: flex-end;
 }
 
-.header__image-container img{
+.header__image-container img {
   object-fit: cover;
   object-position: left;
   width: 90%;
@@ -219,17 +219,17 @@ footer {
   margin-bottom: -4rem;
 }
 
-.hero{
-  background: url('../image/blog/rd-on-the-road-banner-v0.jpeg') no-repeat;
+.hero {
+  background: var(--hero) no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  filter: grayscale(1);
   width: 100%;
-  height: 70vh;
-  margin: 4rem 0;
+  height: 100vh;
+  margin: 5rem 0;
+  box-shadow: inset 0.3rem 0.3rem 1.5rem 1px var(--color-base-20);
 }
 
-.icon{
+.icon {
   height: 0.9rem;
   width: initial;
 }
@@ -271,7 +271,7 @@ nav ul {
   gap: 2rem;
 }
 
-.nudge{
+.nudge {
   background-color: var(--color-anchor);
   overflow: hidden;
 }

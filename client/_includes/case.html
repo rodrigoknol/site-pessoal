@@ -18,7 +18,7 @@ permalink: "projeto/{{ title | slugify }}/"
       <p>Continuar <a href="#challenges" class="animateUpAndDown">▼</a></p>
     </section>
     <div class="header__image-container">
-      <img src="/image/project/{{title | slugify}}-cover.jpeg" alt="Imagem de capa do projeto">
+      <img src="/image/project/{{title | slugify}}-cover.jpg" alt="Imagem de capa do projeto">
     </div>
   </header>
 
@@ -27,7 +27,7 @@ permalink: "projeto/{{ title | slugify }}/"
     <p>{{challenges}}</p>
   </section>
 
-  <section class="hero"></section>
+  <section class="hero" style="--hero: url('../image/project/{{title | slugify}}-gallery.jpg')"></section>
 
   <section class="container container--small">
     {{content}}
