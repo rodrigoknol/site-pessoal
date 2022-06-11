@@ -41,7 +41,7 @@ body {
 aside {
   position: sticky;
   top: 0;
-  padding-left: 3rem;
+  padding-left: 3.5rem;
   color: var(--color-base-20);
   box-sizing: border-box;
   max-height: 100vh;
@@ -104,7 +104,8 @@ button {
 
 .card--with-image {
   display: flex;
-  gap: var(--base-size);
+  gap: 3rem;
+  align-items: center;
 }
 
 .card--with-image > * {
@@ -113,6 +114,10 @@ button {
 
 .card--with-image > img {
   flex: 2;
+  object-fit: cover;
+  object-position: top left;
+  min-width: 1px;
+  min-height: 60vh;
 }
 
 .carousel__parent {
@@ -132,9 +137,8 @@ button {
   position: absolute;
   width: 100%;
   transition: transform 1.2s;
-  box-sizing: border-box;
   backface-visibility: hidden;
-  padding: 8rem calc(2.5 * var(--base-size));
+  padding: calc(2.5 * var(--base-size));
 }
 
 .carousel__controller {
@@ -190,7 +194,8 @@ footer {
 }
 
 .header--case{
-  margin-bottom: 20rem;
+  margin-bottom: 2rem;
+  min-height: 100vh;
 }
 
 .header__image-container{
@@ -199,7 +204,7 @@ footer {
   right: 0;
   top: 25vh;
   height: 65vh;
-  width: 57.5vw;
+  width: 55vw;
   z-index: -1;
   display: flex;
   justify-content: flex-end;
@@ -209,9 +214,9 @@ footer {
 .header__image-container img{
   object-fit: cover;
   object-position: left;
-  width: 85%;
-  height: 90%;
-  margin-bottom: -2rem;
+  width: 90%;
+  height: 100%;
+  margin-bottom: -4rem;
 }
 
 .hero{
@@ -222,6 +227,11 @@ footer {
   width: 100%;
   height: 70vh;
   margin: 4rem 0;
+}
+
+.icon{
+  height: 1rem;
+  width: initial;
 }
 
 img {
@@ -261,10 +271,14 @@ nav ul {
   gap: 2rem;
 }
 
-.nudge a {
+.nudge{
   background-color: var(--color-anchor);
-  width: 100%;
-  display: inline-block;
+  overflow: hidden;
+}
+
+.nudge a {
+  margin: auto;
+  display: block;
   color: var(--background);
   text-align: center;
   transition: background var(--transition-default);

@@ -1,8 +1,8 @@
 <div class="carousel__cell card card--with-image">
   <article class="container--smallest">
-    <h3 class="header__big">Título do projeto</h3>
-    <h4>Subtitulo com algum sumario / explicacao</h4>
-    <a href="/content/cases/case/">Ver mais detalhes</a>
+    <h3 class="header__big">{{project.data.title}}</h3>
+    <h4>{{project.data.subtitle}}</h4>
+    <a href="/projeto/{{ project.data.title | slugify }}">Ver mais detalhes</a>
   </article>
-  <img src="" alt="texto da imagem" />
+  <img src="/image/project/{{ project.data.title | slugify }}-cover.jpeg" alt="Foto de capa do {{project.data.title}}" />
 </div>

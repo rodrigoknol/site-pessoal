@@ -4,11 +4,9 @@
     <button id="carouselPrevious">▼</button>
   </div>
   <div class="carousel">
-    {% include "molecules/card-carousel.html" %}
-    {% include "molecules/card-carousel.html" %}
-    {% include "molecules/card-carousel.html" %}
-    {% include "molecules/card-carousel.html" %}
-    {% include "molecules/card-carousel.html" %}
+    {% for project in loop %}
+      {% include "molecules/card-carousel.html" %}
+    {% endfor %}
   </div>
 </div>
 <script async src="/js/carousel.js"></script>

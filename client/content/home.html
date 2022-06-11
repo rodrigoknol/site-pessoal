@@ -10,6 +10,7 @@ permalink: "/"
 <main>
   <section id="projects" class="container">
     <h2 class="header__max">Principais Projetos</h2>
+    {% assign loop = collections.projeto %}
     {% include "organisms/carousel.html" %}
   </section>
   <section id="process" class="container">

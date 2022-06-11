@@ -1,0 +1,41 @@
+---
+layout: header.html
+permalink: "projeto/{{ title | slugify }}/"
+---
+
+{% include "atoms/nudge.html" %}
+<main>
+  <header class="container header--case">
+    <section class="container--smallest">
+      <h1>{{title}}</h1>
+      <h2 class="subtitle">{{subtitle}}</h2>
+      {% for tag in tags %} 
+        {% include "atoms/tag.html" %} 
+      {% endfor %}
+      <p>{{excerpt}}</p>
+      <a>Link do Github</a>
+      <a>Link do projeto</a>
+      <p>Continuar <a href="#challenges" class="animateUpAndDown">▼</a></p>
+    </section>
+    <div class="header__image-container">
+      <img src="/image/project/{{title | slugify}}-cover.jpeg" alt="Imagem de capa do projeto">
+    </div>
+  </header>
+
+  <section class="container container--small">
+    <h2 class="header__big" id="challenges">Desafios</h2>
+    <p>{{challenges}}</p>
+  </section>
+
+  <section class="hero"></section>
+
+  <section class="container container--small">
+    {{content}}
+  </section>
+
+  <!-- <section class="container">
+    <h2>Artigos relacionados</h2>
+  </section> -->
+</main>
+
+{% include "organisms/footer.html" %}

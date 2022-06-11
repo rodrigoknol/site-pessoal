@@ -2,7 +2,6 @@
 layout: blog.html
 title: "Um site de evento baseado em dados e com foco em conversão"
 subtitle: "O RD on the Road chegou em 2017 a 11 cidades, em todas as 5 regiões do Brasil, e impactou diretamente 5500 pessoas. O projeto me trouxe muito aprendizado e serviu de base para projetos maiores que peguei pela frente."
-permalink: "artigos/{{ title | slugify }}/"
 tags:
   - design
   - desenvolvimento
