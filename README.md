@@ -12,6 +12,11 @@ Com o respositório salvo localmente, você entra na pasta raiz do projeto e exe
 
 ## Agradecimentos
 
-https://github.com/FAlthausen/Vollkorn-Typeface - Tipografia usada para destaques
-https://3dtransforms.desandro.com/carousel - Tutorial para montar o carousel 3D usado na página principal.
-https://www.11ty.dev/ | https://github.com/11ty - Gerador de site estático usado para montar o portfólio
+### Gerais
+- https://github.com/FAlthausen/Vollkorn-Typeface - Tipografia usada para destaques
+- https://3dtransforms.desandro.com/carousel - Tutorial para montar o carousel 3D usado na página principal.
+- https://www.11ty.dev/ | https://github.com/11ty - Gerador de site estático usado para montar o portfólio
+
+### Ícones
+- External Link por Guntur Cahya encontrado no https://nounproject.com
+- Git por Andrejs Kirma encontrado no https://nounproject.com

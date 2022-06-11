@@ -13,8 +13,8 @@ permalink: "projeto/{{ title | slugify }}/"
         {% include "atoms/tag.html" %} 
       {% endfor %}
       <p>{{excerpt}}</p>
-      <a>Link do Github</a>
-      <a>Link do projeto</a>
+      {% include "molecules/anchor-production.html" %} 
+      {% include "molecules/anchor-repo.html" %} 
       <p>Continuar <a href="#challenges" class="animateUpAndDown">▼</a></p>
     </section>
     <div class="header__image-container">
