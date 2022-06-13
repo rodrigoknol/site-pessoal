@@ -17,13 +17,13 @@ O projeto teve três grandes pontos principais que merecem o destaque, que são 
 ### Impactando positivamente todas as áreas da empresa que tem contato direto com clientes e usuários
 
 O [documento de briefing](https://docs.google.com/document/d/1SdJcXDscNz4PPu2pVoggIroZOrA_QDme8weiPCXBF2w/edit) criado como primeira etapa do projeto já resume o principal objetivo do site, que é “Comunicar com clareza a proposta de valor da mobLee para assim vender.“. Você também encontra no briefing uma área com o nome “Compromisso de ajudar todas as áreas da mobLee com o site” e nela temos os seguintes tópicos:
-* Manter ou aumentar o destaque que era dado ao time de CS (Customer Success);
-* Ter um espaço facilmente atualizável e editável para novidades/lançamentos de features do produto;
-* Deixar os materiais educativos mais orientados a buyers journey;
-* Ter uma página específica para cases de sucesso/estudos de casos;
-* Ter um espaço referente a cultura da empresa.
+- Manter ou aumentar o destaque que era dado ao time de CS (Customer Success);
+- Ter um espaço facilmente atualizável e editável para novidades/lançamentos de features do produto;
+- Deixar os materiais educativos mais orientados a [buyers journey](https://blog.hubspot.com/sales/what-is-the-buyers-journey);
+- Ter uma página específica para cases de sucesso/estudos de casos;
+- Ter um espaço referente a cultura da empresa.
 
-Aproveitamos a chance que tivemos ao fazer um redesign e criar um desenvolvimento do zero para conseguir fazer um site que não trabalhe apenas para o time de marketing, mas para a empresa como um todo. Juntar as ideias de diversas áreas desde a parte de planejamento foi um dos maiores acertos desse projeto.
+Aproveitei a chance que tive ao fazer um redesign e criar um desenvolvimento do zero para conseguir fazer um site que não trabalhe apenas para o time de marketing, mas para a empresa como um todo. Juntar as ideias de diversas áreas desde a parte de planejamento foi um dos maiores acertos desse projeto.
 
 ### Em 3 meses, projetar, executar e lançar dois sites de alta complexidade
 
@@ -44,9 +44,9 @@ Tiveram muitos aprendizados e o projeto teve muito mais coisa! Tanto que tem um 
 
 A configuração do novo servidor e suas otimizações tiveram (bem) mais complicações do que o esperado. Tanto que, tentamos lançar o novo site no dia 8 de outubro mas tivemos que voltar atrás por causa da enorme instabilidade que ele estava apresentando. Apenas no dia 11 do mesmo mês, após algumas noites mal dormidas, estávamos satisfeitos com nossas configurações de ambiente e CI/CD e lançamos enfim o novo site.
 
-Houve um grande foco para garantir uma melhor velocidade do site em relação ao anterior (bastante pesado). Alguns focos foram deixar o Javascript bastante enxuto, sempre que possível usar ele puro, maneirarando no uso de bibliotecas externas, ou tentar construir as coisas em HTML/CSS puro, mantendo o CSS organizado, reutilizando código sempre que possível. Usamos também o mínimo possível de fontes e pesos (tipografia), além de otimizações server-side e entregar o site através de uma CDN.
+Houve um grande foco para garantir uma melhor velocidade do site em relação ao anterior (bastante pesado). Alguns pontos foram deixar o Javascript bastante enxuto, sempre que possível usar ele puro, maneirarando no uso de bibliotecas externas, ou tentar construir as coisas em HTML/CSS puro, mantendo o CSS organizado, reutilizando código sempre que possível. Usamos também o mínimo possível de fontes e pesos (tipografia), além de otimizações server-side e entregar o site através de uma CDN.
 
-Além disso, para conseguir uma melhor velocidade uma das estratégias foi garantir que as imagens usadas são leves. Alguns pontos que seguimos foi sempre que possível usar imagem em vetor para ícones, .png para desenhos mais complexos e .jpg 72dpi com qualidade entre 50% e 70% para fotos (na época arquivos .webp ainda não eram aceitos por todos os principais navegadores que focamos).
+Além disso, para conseguir uma melhor velocidade uma das estratégias foi garantir que as imagens usadas fossem leves. Alguns pontos que seguimos foi sempre que possível usar imagem em vetor para ícones, .png para desenhos mais complexos e .jpg 72dpi com qualidade entre 50% e 70% para fotos (na época arquivos .webp ainda não eram aceitos por todos os principais navegadores que focamos).
 
 ### Design
 
