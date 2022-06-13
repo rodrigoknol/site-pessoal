@@ -189,6 +189,12 @@ button {
   width: 28rem;
 }
 
+.container__flex{
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+}
+
 footer {
   padding-bottom: 1rem;
 }

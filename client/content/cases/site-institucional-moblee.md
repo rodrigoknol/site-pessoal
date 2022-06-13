@@ -1,6 +1,6 @@
 ---
 title: Site institucional da mobLee
-subtitle: Melhorando performance e acessibilidade e ao mesmo tempo trocar o portfólio de produtos da empresa
+subtitle: Melhorando a performance e acessibilidade do site de uma empresa em crescimento acelerado
 excerpt: Três meses para redesenhar todo o sistema de sites da empresa do 0, criando junto uma nova identidade visual, melhorando performance, acessibilidade e em especial conversão e ainda trazendo de forma natural a expansão de portfólio de produtos.
 challenges: O site era o principal canal de comunicação com clientes e parceiros, aquisição de novos clientes e disseminação de conteúdo da mobLee. Ou seja, ter um bom site era obrigação para alcançar os resultados que desejavam. Com a evolução de portfólio de produtos da empresa, além dos problemas endêmicos de performance do antigo site, abriram espaço para um redesign.
 layout: case.html

@@ -34,9 +34,12 @@ permalink: "/"
     <br/> -->
 
     <!-- Articles list -->
-    {% for post in collections.artigo %}
-      {% include "molecules/card-blog-list.html" %}
-    {% endfor %}
+    <div class="container__flex">
+      {% for post in collections.artigo %}
+        {% include "molecules/card-blog-list.html" %}
+      {% endfor %}
+    </div>
+   
   </section>
 </main>
 
