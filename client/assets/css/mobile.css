@@ -1,0 +1,108 @@
+@media (max-width: 800px) {
+  :root {
+    --base-size: 15px;
+  }
+  html {
+    font-size: 15px;
+  }
+
+  h1,
+  .header__max {
+    font-size: 3.5rem;
+  }
+
+  h2,
+  h3,
+  h4,
+  .header__big {
+    margin-top: 1.5rem;
+  }
+
+  aside {
+    display: none;
+  }
+
+  .card--with-image {
+    flex-direction: column-reverse;
+    padding: 2rem 1rem;
+    gap: 0;
+    overflow: auto;
+  }
+
+  .card--with-image > img {
+    min-height: initial;
+    flex: auto;
+  }
+
+  .carousel__controller {
+    top: -7rem;
+    right: 0;
+    left: 0;
+    bottom: initial;
+    flex-direction: initial;
+  }
+
+  .carousel__parent {
+    margin: 10rem 0 5rem 0;
+  }
+
+  .container {
+    max-width: 100%;
+    padding: 0 0.5rem;
+  }
+
+  .header--case {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: initial;
+    min-height: initial;
+  }
+
+  .header__image-container {
+    position: relative;
+    height: initial;
+    width: initial;
+    z-index: initial;
+    margin: initial;
+    margin-top: 2rem;
+    display: block;
+    top: initial;
+    background-color: initial;
+  }
+
+  .header__image-container img {
+    width: 100%;
+    height: initial;
+    margin: initial;
+  }
+
+  .molding {
+    background-image: initial;
+    min-height: calc(100vh - 2rem);
+  }
+
+  .molding .container {
+    -webkit-backdrop-filter: initial;
+    backdrop-filter: initial;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .nudge {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+
+  .tabs--controller {
+    overflow: auto;
+    gap: 0.5rem;
+  }
+
+  .tabs--controller > * {
+    min-width: 75%;
+    z-index: 2;
+  }
+}

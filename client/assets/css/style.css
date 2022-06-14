@@ -180,10 +180,12 @@ button {
   width: 60rem;
   max-width: 90vw;
   margin: auto;
+  box-sizing: border-box;
 }
 
 .container--small {
   width: 42rem;
+  max-width: 100%;
 }
 
 .container--small p:first-of-type::first-letter {
@@ -197,7 +199,8 @@ button {
 }
 
 .container--smallest {
-  width: 28rem;
+  width: 34rem;
+  max-width: 100%;
 }
 
 .container__flex {
@@ -269,8 +272,7 @@ img {
 }
 
 .molding .container {
-  padding: 3rem 2rem;
-  background-color: var(--background-transparent);
+  padding: 3rem;
   -webkit-backdrop-filter: blur(calc(0.2 * var(--base-size)));
   backdrop-filter: blur(calc(0.2 * var(--base-size)));
   border-radius: 1.5rem;
@@ -363,6 +365,7 @@ th:first-child {
   background-color: var(--color-base-55);
   padding: 1rem;
   border-radius: 1rem;
+  display: block;
 }
 
 .tabs--controller input:checked ~ label {
