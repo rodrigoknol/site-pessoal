@@ -9,9 +9,11 @@ permalink: "projeto/{{ title | slugify }}/"
     <section class="container--smallest">
       <h1>{{title}}</h1>
       <h2 class="subtitle">{{subtitle}}</h2>
-      {% for tag in tags %} 
-        {% include "atoms/tag.html" %} 
-      {% endfor %}
+      <div class="tag--container">
+        {% for tag in tags %} 
+          {% include "atoms/tag.html" %} 
+        {% endfor %}
+      </div>
       <p>{{excerpt}}</p>
       {% include "molecules/anchor-production.html" %} 
       {% include "molecules/anchor-repo.html" %} 

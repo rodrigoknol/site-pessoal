@@ -344,6 +344,10 @@ th:first-child {
   background: var(--color-green-30);
 }
 
+.tag__gestao-de-produto {
+  background-color: var(--color-yellow-0);
+}
+
 .tag--container {
   margin: 1rem 0;
   display: flex;
