@@ -28,7 +28,7 @@ h1 {
   background: linear-gradient(
     45deg,
     var(--color-blue-0),
-    var(--color-blue-20) 60%
+    var(--color-blue-30) 60%
   );
   background-clip: text;
   -webkit-background-clip: text;

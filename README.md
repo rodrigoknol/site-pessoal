@@ -20,3 +20,4 @@ Com o respositório salvo localmente, você entra na pasta raiz do projeto e exe
 ### Ícones
 - External Link por Guntur Cahya encontrado no https://nounproject.com
 - Git por Andrejs Kirma encontrado no https://nounproject.com
+- Wave por Ecem Afacan encontrado no https://nounproject.com

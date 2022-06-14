@@ -10,23 +10,22 @@ permalink: "/"
 <main>
   <section id="projects" class="container">
     <h2 class="header__max">Principais Projetos</h2>
-    {% assign loop = collections.projeto %}
+    {% assign loop = collections.projeto %} 
     {% include "organisms/carousel.html" %}
   </section>
   <section id="process" class="container">
-    <h2 class="header__max">Meus Processos</h2>
-    Preparar área
+    <h2 class="header__max">Os Meus Processos</h2>
+    {% include "organisms/process.html" %}
   </section>
   <section id="blog" class="container">
     <h2 class="header__max">Anotações</h2>
 
     <!-- Articles list -->
     <div class="container__flex">
-      {% for post in collections.artigo %}
-        {% include "molecules/card-blog-list.html" %}
+      {% for post in collections.artigo %} 
+        {% include "molecules/card-blog-list.html" %} 
       {% endfor %}
     </div>
-   
   </section>
 </main>
 

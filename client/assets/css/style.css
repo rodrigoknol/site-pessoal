@@ -189,7 +189,7 @@ button {
   width: 28rem;
 }
 
-.container__flex{
+.container__flex {
   display: flex;
   gap: 1rem;
   flex-direction: column;
@@ -246,6 +246,7 @@ img {
 
 .molding {
   background: var(--color-blue-50);
+  background-image: url("/image/pattern/wave.svg");
   margin: var(--base-size);
   margin-bottom: 0;
   padding: 1rem;
@@ -256,6 +257,18 @@ img {
   justify-content: center;
 }
 
+.molding .container {
+  padding: 3rem 2rem;
+  background-color: var(--background-transparent);
+  -webkit-backdrop-filter: blur(calc(0.2 * var(--base-size)));
+  backdrop-filter: blur(calc(0.2 * var(--base-size)));
+  border-radius: 1.5rem;
+}
+
+.molding .container h1 {
+  margin-top: 0;
+}
+
 nav {
   position: sticky;
   padding: var(--base-size);
@@ -263,8 +276,8 @@ nav {
   display: flex;
   justify-content: space-between;
   background-color: var(--background-transparent);
-  -webkit-backdrop-filter: blur(calc(0.3 * var(--base-size)));
-  backdrop-filter: blur(calc(0.3 * var(--base-size)));
+  -webkit-backdrop-filter: blur(calc(0.2 * var(--base-size)));
+  backdrop-filter: blur(calc(0.2 * var(--base-size)));
   z-index: 99;
   border-bottom: 2px solid var(--color-blue-50);
 }
@@ -321,9 +334,34 @@ th:first-child {
   position: sticky;
   left: 0px;
   background-color: var(--background-transparent);
-  -webkit-backdrop-filter: blur(calc(0.3 * var(--base-size)));
-  backdrop-filter: blur(calc(0.3 * var(--base-size)));
+  -webkit-backdrop-filter: blur(calc(0.2 * var(--base-size)));
+  backdrop-filter: blur(calc(0.2 * var(--base-size)));
   min-width: 12rem;
+}
+
+.tabs--controller {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tabs--controller label {
+  font-weight: 500;
+  font-size: 1.15rem;
+  cursor: pointer;
+  color: var(--color-anchor);
+  background-color: var(--color-base-55);
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.tabs--controller input:checked ~ label {
+  color: var(--color-text-primary);
+  background: none;
+}
+
+.tabs--controller input[type="radio"],
+.tabs .tabs--panel {
+  display: none;
 }
 
 .tag {
