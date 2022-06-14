@@ -4,7 +4,7 @@
     <button id="carouselPrevious">▼</button>
   </div>
   <div class="carousel">
-    {% for project in loop %}
+    {% for project in loop reversed %}
       {% include "molecules/card-carousel.html" %}
     {% endfor %}
   </div>

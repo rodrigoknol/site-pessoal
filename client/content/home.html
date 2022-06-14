@@ -22,7 +22,7 @@ permalink: "/"
 
     <!-- Articles list -->
     <div class="container__flex">
-      {% for post in collections.artigo %} 
+      {% for post in collections.artigo reversed %} 
         {% include "molecules/card-blog-list.html" %} 
       {% endfor %}
     </div>
