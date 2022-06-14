@@ -21,3 +21,11 @@ Com o respositório salvo localmente, você entra na pasta raiz do projeto e exe
 - External Link por Guntur Cahya encontrado no https://nounproject.com
 - Git por Andrejs Kirma encontrado no https://nounproject.com
 - Wave por Ecem Afacan encontrado no https://nounproject.com
+
+### Ícones usados como ilustrações
+- Briefing por sripfoto encontrado no https://nounproject.com
+- Compass por Mada Creative encontrado no https://nounproject.com
+- Magnifying Glass por ibrandify encontrado no https://nounproject.com
+- Paint por Valeriy encontrado no https://nounproject.com
+- Trophy por Maxim Kulikov encontrado no https://nounproject.com
+- Continuity por fae frey encontrado no https://nounproject.com

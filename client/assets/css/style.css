@@ -364,6 +364,18 @@ th:first-child {
   display: none;
 }
 
+.tabs--panels img{
+  margin-top: 3rem;
+  height: 5rem;
+  width: 10rem;
+  object-fit: contain;
+  object-position: left center;
+}
+
+.tabs--panels .header__big{
+  margin-top: 1rem;
+}
+
 .tag {
   background-color: var(--color-base-40);
   padding: 0.25rem 0.75rem;
