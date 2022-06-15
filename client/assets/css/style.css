@@ -363,7 +363,7 @@ th:first-child {
   font-size: 1.15rem;
   cursor: pointer;
   color: var(--color-anchor);
-  background-color: var(--color-base-55);
+  background-color: var(--color-base-50);
   padding: 1rem;
   border-radius: 1rem;
   display: block;
