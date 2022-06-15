@@ -27,7 +27,7 @@ aside {
   gap: 0;
 }
 
-.card--with-image > img {
+.card--with-image picture {
   height: initial;
   max-height: 22vh;
   flex: auto;
@@ -70,7 +70,7 @@ aside {
   background-color: initial;
 }
 
-.header__image-container img {
+.header__image-container img , .header__image-container picture {
   width: 100%;
   height: initial;
   margin: initial;

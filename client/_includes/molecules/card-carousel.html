@@ -1,13 +1,22 @@
+{% assign slugified = project.data.title | slugify %}
 <div class="carousel__cell card card--with-image">
   <article class="container--smallest">
     <h3 class="header__big">{{project.data.title}}</h3>
     <h4>{{project.data.subtitle}}</h4>
-    <p><a href="/projeto/{{ project.data.title | slugify }}">Ver mais detalhes</a></p>
+    <p><a href="/projeto/{{ slugified }}">Ver mais detalhes</a></p>
 
     {% assign production = project.data.production %}
     {% assign repo = project.data.repo %}
     {% include "molecules/anchor-production.html" %} 
     {% include "molecules/anchor-repo.html" %} 
   </article>
-  <img src="/image/project/{{ project.data.title | slugify }}-cover.jpg" alt="Foto de capa do {{project.data.title}}" />
+  <!-- Defines filePath -->
+  {% assign fileName = slugified | append:"-cover.jpg"  %}
+  {% assign filePath = "./client/assets/image/project/" | append: fileName %}
+
+  <!-- Defines alt -->
+  {% assign alt = "Foto de capa do " | append: project.data.title %}
+
+  <!-- Create image -->
+  {% image filePath, alt, null %}
 </div>

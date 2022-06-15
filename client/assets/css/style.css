@@ -112,8 +112,14 @@ button {
   flex: 1 1 0;
 }
 
-.card--with-image > img {
+.card--with-image > picture {
   flex: 2;
+  min-width: 1px;
+  height: 60vh;
+  max-height: 40rem;
+}
+
+.card--with-image > picture > img {
   object-fit: cover;
   object-position: top left;
   min-width: 1px;
@@ -166,7 +172,7 @@ button {
   color: var(--color-blue-20);
 }
 
-.chart__bar{
+.chart__bar {
   display: block;
   font-weight: 600;
   padding: 0.5rem 1rem;
@@ -232,12 +238,17 @@ footer {
   align-items: flex-end;
 }
 
-.header__image-container img {
-  object-fit: cover;
-  object-position: left;
+.header__image-container picture {
   width: 90%;
   height: 100%;
   margin-bottom: -4rem;
+}
+
+.header__image-container img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: top left;
 }
 
 .hero {
@@ -379,7 +390,7 @@ th:first-child {
   display: none;
 }
 
-.tabs--panels img{
+.tabs--panels img {
   margin-top: 3rem;
   height: 5rem;
   width: 10rem;
@@ -387,7 +398,7 @@ th:first-child {
   object-position: left center;
 }
 
-.tabs--panels .header__big{
+.tabs--panels .header__big {
   margin-top: 1rem;
 }
 
@@ -442,7 +453,7 @@ ul > li {
   max-width: 100%;
 }
 
-.hidden-desktop{
+.hidden-desktop {
   display: none;
 }
 
