@@ -199,7 +199,7 @@ button {
 }
 
 .container--smallest {
-  width: 34rem;
+  width: 30rem;
   max-width: 100%;
 }
 
@@ -272,10 +272,11 @@ img {
 }
 
 .molding .container {
-  padding: 3rem;
+  padding: 2rem;
   -webkit-backdrop-filter: blur(calc(0.2 * var(--base-size)));
   backdrop-filter: blur(calc(0.2 * var(--base-size)));
   border-radius: 1.5rem;
+  box-sizing: initial;
 }
 
 .molding .container h1 {
