@@ -11,3 +11,9 @@ node_modules
 _site
 /_site
 /_site/*
+
+# Optimized images #
+client/assets/image/optimized
+client/assets/image/optimized/*
+/client/assets/image/optimized
+/client/assets/image/optimized/*
