@@ -10,23 +10,23 @@ tags:
 
 Ao decidir fazer um portfólio para mim, resolvi usar a oportunidade para montar ele com um projeto de design e desenvolvimento, e um dos primeiro passos que executei foi uma pesquisa para entender um pouco melhor os meus públicos.
 
-A pesquisa iniciou com perguntas quantitativas, e termina com questões qualitativas, todos os campos eram optativos, menos o último, uma pergunta para garantir que todos os participantes estão cientes que participam de uma pesquisa que terão os seus dados agregados divididos com o público e aceitam que suas respostas façam parte dos resultados agregados.
+A pesquisa iniciou com perguntas quantitativas, e termina com questões qualitativas. Todos os campos eram optativos, menos o último: uma pergunta para garantir que todos os participantes estão cientes que participam de uma pesquisa que terão os seus dados agregados divididos com o público e aceitam que suas respostas façam parte dos resultados agregados.
 
 Enviei o formulário para profissionais de recrutamento e também profissionais responsáveis por departamentos de design ou desenvolvimento, que em seu dia-a-dia, em processo de contratações, se deparam ou pelo menos procuram por portfólios ou um índice de projetos que a pessoa participou.
 
-Tive um total de 15 respostas, o que não, não garante significância estatística, mas me da um “cheiro” do caminho à seguir, ajudando a priorizar a forma de construir um portfólio de projetos feitos e me apresentar para o mundo.
+Tive um total de 15 respostas, o que não, não garante significância estatística, mas me dá um “cheiro” do caminho à seguir, ajudando a priorizar a forma de construir um portfólio de projetos feitos e me apresentar para o mundo.
 
 ## Os resultados da pesquisa
 
 A primeira pergunta foi bastante direta:
 
-**O quão importante é um portfólio (GitHub / behance / dribble / site próprio) na hora que você avalia um candidato?**
+**O quão importante é um portfólio (GitHub / behance / dribbble / site próprio) na hora que você avalia um candidato?**
 
 <span class="chart__bar" style="--size:76%">3,8 de 5,0</span>
 
-E a resposta podia entrar em um range entre 1 (nem um pouco imporrtante) e 5 (muito importante), o resultado final foi **3,8** com apenas uma resposta com nota 1 ou seja, que considera um portfólio muito pouco importante.
+E a resposta podia entrar em um range entre 1 (nem um pouco imporrtante) e 5 (muito importante), o resultado final foi **3,8** com apenas uma resposta com nota 1, ou seja, que considera um portfólio muito pouco importante.
 
-Depois disso, o formulário tinha duas questões bastante similares em respostas possíveis, porém diferentes em suas perguntas. A expectativa era quem responder organizar os itens apresentados em ordem de importância, ao analisar um portfólio, na primeira pergunta de design, e na segunda de desenvolvimento.
+Depois disso, o formulário tinha duas questões bastante similares em respostas possíveis, porém diferentes em suas perguntas. A expectativa era que quem respondesse, organizasse os itens apresentados em ordem de importância, ao analisar um portfólio, na primeira pergunta de design, e na segunda de desenvolvimento.
 
 As possíveis respostas, junto com as notas estipuladas, eram as seguintes:
 
@@ -55,9 +55,9 @@ Por fim, os resultados foram normalizados, para chegarem em um número entre 0 e
 <span class="chart__bar" style="--size:68%">Repositórios 6,4</span>
 <span class="chart__bar" style="--size:32%">Artigos 3,0</span>
 
-A maior ironia é a nota que artigos receberam em ambos os casos, pois bem, estamos aqui em um artigo não é mesmo… No caso tudo bem, na verdade mais que isso, o mais importante é sempre se lembrar “você não é o seu usuário”, e ao procurar pela qualidade dos trabalhos de algum candidato, não é na sessão de artigos / blog que quem estiver procurando por alguém ira procurar por respostas.
+A maior ironia é a nota que artigos receberam em ambos os casos. Pois bem, estamos aqui em um artigo, não é mesmo… No caso tudo bem - na verdade mais que isso - o mais importante é sempre se lembrar “você não é o seu usuário”, e ao procurar pela qualidade dos trabalhos de algum candidato, não é na sessão de artigos / blog que quem estiver procurando por alguém irá procurar por respostas.
 
-Isso ajudou a despriorizar a área de artigos do site final, ela existe, mas não tem destaque, fica depois de casos de sucesso e um resumo do processo, onde faz mais sentido pensando no público alvo, além disso, o nome foi “atenuado” para anotações.
+Isso ajudou a despriorizar a área de artigos do site final. Ela existe, mas não tem destaque, fica depois de casos de sucesso e um resumo do processo, no qual faz mais sentido pensando no público alvo. Além disso, o nome foi “atenuado” para anotações.
 
 ## Respostas qualitativas
 
@@ -99,4 +99,4 @@ Tirei repetições e separei as principais respostas, seguem as perguntas e suas
 
 Essa pequena pesquisa esteve no ar durante 4 dias, e foi um dos primeiros passos que dei para construir o meu próprio portfólio, não apenas no automático, mas com um real projeto.
 
-Ela é uma resposta definitiva? Claro que não, foi uma pesquisa exploratório para entender o contexto e ajudar a dar os primeiros passos. Se alguém se aprofundar no assunto - o que faz um bom portfólio - adoraria de saber mais sobre o assunto, enquanto isso, espero que se estiver pensando em construir o seu portfólio, esses resultados possam te ajudar a dar os primeiros passos!
+Ela é uma resposta definitiva? Claro que não, foi uma pesquisa exploratório para entender o contexto e ajudar a dar os primeiros passos. Se alguém se aprofundar no assunto - o que faz um bom portfólio - adoraria saber mais sobre o assunto! Enquanto isso, espero que se estiver pensando em construir o seu portfólio, esses resultados possam te ajudar a dar os primeiros passos!
