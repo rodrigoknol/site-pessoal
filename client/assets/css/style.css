@@ -117,7 +117,8 @@ button {
   object-fit: cover;
   object-position: top left;
   min-width: 1px;
-  min-height: 60vh;
+  height: 60vh;
+  max-height: 40rem;
 }
 
 .carousel__parent {
@@ -440,6 +441,10 @@ ul > li {
 .full-width {
   width: 100%;
   max-width: 100%;
+}
+
+.hidden-desktop{
+  display: none;
 }
 
 .no-style {

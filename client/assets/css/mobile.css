@@ -8,6 +8,7 @@ html {
 h1,
 .header__max {
   font-size: 3.25rem;
+  margin-top: 4rem;
 }
 
 h2,
@@ -25,11 +26,11 @@ aside {
   flex-direction: column-reverse;
   padding: 2rem 1rem;
   gap: 0;
-  overflow: auto;
 }
 
 .card--with-image > img {
-  min-height: initial;
+  height: initial;
+  max-height: 22vh;
   flex: auto;
 }
 
@@ -76,6 +77,10 @@ aside {
   margin: initial;
 }
 
+.hero{
+  height: 75vh;
+}
+
 .molding {
   background-image: initial;
   min-height: calc(100vh - 2rem);
@@ -105,4 +110,8 @@ nav {
 .tabs--controller > * {
   min-width: 60%;
   z-index: 2;
+}
+
+.hidden-desktop{
+  display: initial;
 }
