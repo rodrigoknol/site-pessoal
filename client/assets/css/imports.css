@@ -2,4 +2,5 @@
   font-family: "Volkorn";
   font-weight: 500;
   src: url("/font/Vollkorn-Medium.ttf") format("truetype");
+  font-display: swap;
 }
