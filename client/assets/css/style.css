@@ -122,9 +122,9 @@ button {
 }
 
 .carousel__parent {
-  margin: 7rem 0 10rem 0;
+  margin: 7rem 0;
   position: relative;
-  perspective: 1000px;
+  perspective: 72rem;
 }
 
 .carousel {
