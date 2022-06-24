@@ -123,3 +123,9 @@ nav {
 .hidden-desktop {
   display: initial;
 }
+
+@supports (-webkit-touch-callout: none) {
+  .hero {
+    background-attachment: initial;
+  }
+}
