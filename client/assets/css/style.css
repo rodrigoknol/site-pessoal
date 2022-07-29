@@ -244,7 +244,7 @@ footer {
   margin-bottom: -4rem;
 }
 
-.header__image-container img{
+.header__image-container img {
   height: 100%;
   width: 100%;
   object-fit: cover;
@@ -462,4 +462,13 @@ ul > li {
   background: inherit;
   padding: 0;
   margin: 0;
+}
+
+@media (max-width: 1300px) {
+  :root {
+    --base-size: 14.5px;
+  }
+  html {
+    font-size: 14.5px;
+  }
 }
