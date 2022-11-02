@@ -4,7 +4,6 @@ permalink: "projeto/{{ title | slugify }}/"
 ---
 
 <custom-nudge>⏎ Voltar para o início</custom-nudge>
-{% include "atoms/nudge/nudge.html" %}
 
 <main>
   <header class="container header--case">
@@ -17,8 +16,26 @@ permalink: "projeto/{{ title | slugify }}/"
         {% endfor %}
       </div>
       <p>{{excerpt}}</p>
-      {% include "molecules/anchor-production.html" %} 
-      {% include "molecules/anchor-repo.html" %} 
+      {% if production %}
+        <custom-anchor-with-icon 
+          href={{ production }} 
+          icon="external-link"
+          alt="âncora externa"
+        >
+          Acessar em produção
+        </custom-anchor-with-icon>
+      {% endif %}
+
+      {% if repo %}
+        <custom-anchor-with-icon 
+          href={{ repo }} 
+          icon="repo"
+          alt="repositório"
+        >
+          Visitar repositório
+        </custom-anchor-with-icon>
+      {% endif %}
+      
       <p>Continuar <a href="#challenges" class="animateUpAndDown">▼</a></p>
     </section>
     <div class="header__image-container">

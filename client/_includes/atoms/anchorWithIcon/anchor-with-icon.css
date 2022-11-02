@@ -1,0 +1,35 @@
+a {
+  cursor: pointer;
+  color: var(--color-anchor);
+  position: relative;
+  text-decoration: none;
+  transition: color var(--transition-default);
+  font-weight: 500;
+  z-index: 1;
+}
+
+a:hover {
+  color: var(--color-text-secondary);
+}
+
+a:before {
+  content: "";
+  position: absolute;
+  filter: opacity(0);
+  bottom: 0;
+  left: -2.5%;
+  width: 105%;
+  height: 25%;
+  background: var(--color-highlight);
+  transition: filter var(--transition-default);
+  z-index: -1;
+}
+
+a:hover:before {
+  filter: opacity(1);
+}
+
+img {
+  height: 0.9rem;
+  width: initial;
+}

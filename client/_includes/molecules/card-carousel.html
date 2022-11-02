@@ -5,10 +5,25 @@
     <h4>{{project.data.subtitle}}</h4>
     <p><a href="/projeto/{{ slugified }}">Ver mais detalhes</a></p>
 
-    {% assign production = project.data.production %}
-    {% assign repo = project.data.repo %}
-    {% include "molecules/anchor-production.html" %} 
-    {% include "molecules/anchor-repo.html" %} 
+    {% if project.data.production %}
+      <custom-anchor-with-icon 
+        href={{ project.data.production }} 
+        icon="external-link"
+        alt="âncora externa"
+      >
+        Acessar em produção
+      </custom-anchor-with-icon>
+    {% endif %}
+
+    {% if project.data.repo %}
+      <custom-anchor-with-icon 
+        href={{ project.data.repo }} 
+        icon="repo"
+        alt="repositório"
+      >
+        Visitar repositório
+      </custom-anchor-with-icon>
+    {% endif %}
   </article>
   <!-- Defines filePath -->
   {% assign fileName = slugified | append:"-cover.jpg"  %}

@@ -1,0 +1,14 @@
+<template id="anchor-with-icon-template">
+  <style>
+    {% include "atoms/anchorWithIcon/anchor-with-icon.css" %}
+  </style>
+  <a class="anchor" target="_blank">
+    <img class="icon" />
+    <slot>Texto</slot>
+  </a>
+  <br/>
+</template>
+
+<script>
+  {% include "atoms/anchorWithIcon/anchor-with-icon.js" %}
+</script>
