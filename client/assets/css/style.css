@@ -316,28 +316,6 @@ nav ul {
   gap: 2rem;
 }
 
-.nudge {
-  background-color: var(--color-anchor);
-  overflow: hidden;
-}
-
-.nudge a {
-  margin: auto;
-  display: block;
-  color: var(--background);
-  text-align: center;
-  transition: background var(--transition-default);
-}
-
-.nudge a:hover {
-  background-color: var(--color-blue-10);
-  color: var(--background);
-}
-
-.nudge a:hover:before {
-  display: none;
-}
-
 .table--wrapper {
   width: 100%;
   overflow: auto;

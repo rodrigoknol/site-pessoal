@@ -1,0 +1,21 @@
+header {
+  background-color: var(--color-anchor);
+  overflow: hidden;
+}
+
+header a {
+  margin: auto;
+  display: block;
+  color: var(--background);
+  text-align: center;
+  transition: background var(--transition-default);
+}
+
+header a:hover {
+  background-color: var(--color-blue-10);
+  color: var(--background);
+}
+
+header a:hover:before {
+  display: none;
+}

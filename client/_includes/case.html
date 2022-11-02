@@ -3,7 +3,9 @@ layout: header.html
 permalink: "projeto/{{ title | slugify }}/"
 ---
 
-{% include "atoms/nudge.html" %}
+<custom-nudge>⏎ Voltar para o início</custom-nudge>
+{% include "atoms/nudge/nudge.html" %}
+
 <main>
   <header class="container header--case">
     <section class="container--smallest">
@@ -34,19 +36,23 @@ permalink: "projeto/{{ title | slugify }}/"
   </header>
 
   <section class="container container--small">
-    <h2 class="header__big" id="challenges">Desafios</h2>
+    <h2 
+      class="header__big" 
+      id="challenges"
+    >
+      Desafios
+    </h2>
     <p>{{challenges}}</p>
   </section>
 
-  <section class="hero" style="--hero: url('https://rodrigoknol.com/image/project/{{title | slugify}}-gallery.jpg')"></section>
+  <section 
+    class="hero" 
+    style="--hero: url('https://rodrigoknol.com/image/project/{{title | slugify}}-gallery.jpg')">
+  </section>
 
   <section class="container container--small">
     {{content}}
   </section>
-
-  <!-- <section class="container">
-    <h2>Artigos relacionados</h2>
-  </section> -->
 </main>
 
 {% include "organisms/footer.html" %}

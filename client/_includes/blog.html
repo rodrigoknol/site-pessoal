@@ -2,11 +2,13 @@
 layout: header.html
 permalink: "artigos/{{ title | slugify }}/"
 ---
-{% include "atoms/nudge.html" %}
-<main>
-  {% include "molecules/title-blog.html" %}
 
+<custom-nudge href="test">⏎ Voltar para o início</custom-nudge>
+{% include "atoms/nudge/nudge.html" %}
+
+<main>
+  {% include "molecules/title-blog.html" %} 
   {% include "organisms/article.html" %}
 </main>
 
-{% include "organisms/footer.html" %} 
+{% include "organisms/footer.html" %}
