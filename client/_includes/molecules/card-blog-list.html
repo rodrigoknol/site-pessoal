@@ -1,6 +1,9 @@
 <article class="card">
-  {% for tag in post.data.tags %} {% if tag != "artigo" %} {% include
-  "atoms/tag.html" %} {% endif %} {% endfor %}
+  {% for tag in post.data.tags %} 
+    {% if tag != "artigo" %} 
+      <custom-tag type="{{tag | slugify}}">{{tag}}</custom-tag>
+    {% endif %} 
+  {% endfor %}
   <h3>{{post.data.title}}</h3>
   <p><a href="{{ post.url }}">Ler agora</a></p>
 </article>

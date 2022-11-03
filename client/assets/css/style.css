@@ -376,28 +376,6 @@ th:first-child {
   margin-top: 1rem;
 }
 
-.tag {
-  background-color: var(--color-base-40);
-  padding: 0.25rem 0.75rem;
-  font-weight: 500;
-  line-height: 1;
-  border-radius: 1rem;
-  color: var(--color-text-secondary);
-}
-
-.tag__design {
-  background: var(--color-blue-10);
-  color: var(--color-base-55);
-}
-
-.tag__desenvolvimento {
-  background: var(--color-green-30);
-}
-
-.tag__gestao-de-produto {
-  background-color: var(--color-yellow-0);
-}
-
 .tag--container {
   margin: 1rem 0;
   display: flex;

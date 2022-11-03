@@ -11,8 +11,8 @@ permalink: "projeto/{{ title | slugify }}/"
       <h1>{{title}}</h1>
       <h2 class="subtitle">{{subtitle}}</h2>
       <div class="tag--container">
-        {% for tag in tags %} 
-          {% include "atoms/tag.html" %} 
+        {% for tag in tags %}
+          <custom-tag type="{{tag | slugify}}">{{tag}}</custom-tag>
         {% endfor %}
       </div>
       <p>{{excerpt}}</p>

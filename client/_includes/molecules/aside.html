@@ -2,7 +2,7 @@
   <p><strong>{{title}}</strong></p>
   <div class="tag--container">
     {% for tag in tags %}
-    {% include "atoms/tag.html" %}
+      <custom-tag type="{{tag | slugify}}">{{tag}}</custom-tag>
     {% endfor %}
   </div>
   <strong>Nessa página</strong>
