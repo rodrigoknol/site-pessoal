@@ -1,0 +1,53 @@
+@import "/css/styled/tag-container.css";
+/* @import "/css/typography.css"; */
+
+aside {
+  padding-left: 3.5rem;
+  color: var(--color-base-20);
+  box-sizing: border-box;
+  max-height: 100vh;
+  overflow: auto;
+}
+
+p {
+  font-size: 1.2rem;
+  margin: 0 0 1.6rem;
+}
+
+.aside--navigation {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.aside--navigation-holder {
+  max-height: 50vh;
+  overflow: auto;
+}
+
+.aside--navigation > * {
+  display: inherit;
+}
+
+.aside--navigation a {
+  padding: 0.25rem 0.75rem;
+  width: 100%;
+  color: var(--color-text-secondary);
+  transition: background-color var(--transition-default);
+  border-left: 0.25rem solid var(--color-blue-50);
+  text-decoration: none;
+}
+
+.aside--navigation a:hover {
+  background-color: var(--color-blue-50);
+  color: var(--color-blue-0);
+}
+
+@media (max-width: 50rem) {
+  aside {
+    display: none;
+  }
+}

@@ -1,0 +1,21 @@
+<template id="aside-template">
+  <style>
+    {% include "molecules/aside/aside.css" %}
+  </style>
+  <aside>
+    <p>
+      <strong><slot>Título</slot></strong>
+    </p>
+    <div class="tag--container">
+      <slot name="tag"></slot>
+    </div>
+    <strong>Nessa página</strong>
+    <section class="aside--navigation-holder">
+      <ul id="navigation" class="aside--navigation"></ul>
+    </section>
+  </aside>
+</template>
+
+<script>
+  {% include "molecules/aside/aside.js" %}
+</script>

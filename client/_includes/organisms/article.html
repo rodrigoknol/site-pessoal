@@ -1,5 +1,11 @@
-<section class="container article">
-  {% include "molecules/aside.html" %}
+<section class="container blog">
+  <custom-aside>
+    {% for tag in tags %}
+      <custom-tag slot="tag" type="{{tag | slugify}}">{{tag}}</custom-tag>
+    {% endfor %}
+    
+    {{title}}
+  </custom-aside>
 
   <article class="container--small">
     {{content}}

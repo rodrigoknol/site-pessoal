@@ -1,5 +1,6 @@
 @import "/css/styled/icon.css";
 @import "/css/styled/nav.css";
+@import "/css/styled/tag-container.css";
 
 /* General / Generics */
 :root {
@@ -29,67 +30,17 @@ h1::selection {
 }
 
 /* Content */
-.article {
+.blog {
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
   align-items: flex-start;
 }
 
-.article > aside {
-  flex: 1 1 0;
-}
-
-aside {
+.blog > *:first-child {
+  flex: 1;
   position: sticky;
   top: 0;
-  padding-left: 3.5rem;
-  color: var(--color-base-20);
-  box-sizing: border-box;
-  max-height: 100vh;
-}
-
-.aside--navigation {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 0.25rem;
-}
-
-.aside--navigation-holder {
-  max-height: 50vh;
-  overflow: auto;
-  border-bottom: 1px solid var(--color-base-40);
-}
-
-.aside--navigation > * {
-  display: inherit;
-}
-
-.aside--navigation a:not(.button) {
-  padding: 0.25rem 0.75rem;
-  width: 100%;
-  color: var(--color-text-secondary);
-  transition: background-color var(--transition-default);
-  font-weight: 400;
-  font-size: 0.95rem;
-  border-left: 0.25rem solid var(--color-blue-50);
-}
-
-.aside--navigation a:not(.selected):hover {
-  background-color: var(--color-blue-50);
-  color: var(--color-blue-0);
-}
-
-.aside--navigation a:not(.button):hover:before {
-  display: none;
-}
-
-.aside--navigation a.selected {
-  background-color: var(--color-blue-50);
-  color: var(--color-base-0);
 }
 
 button {
@@ -354,13 +305,6 @@ th:first-child {
 
 .tabs--panels .header__big {
   margin-top: 1rem;
-}
-
-.tag--container {
-  margin: 1rem 0;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
 }
 
 ul {
