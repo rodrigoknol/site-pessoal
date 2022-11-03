@@ -9,7 +9,9 @@ customElements.define(
       ).content;
 
       const anchor = template.querySelector(".anchor");
-      anchor.href = this.getAttribute("href") || "/";
+      const link = this.getAttribute("href");
+      anchor.href = link || "/";
+      anchor.target = !!link ? "_blank" : "_self";
 
       const icon = template.querySelector(".icon");
       icon.src = `/image/icons/${this.getAttribute("icon")}.svg`;
