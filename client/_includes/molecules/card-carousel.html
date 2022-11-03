@@ -1,6 +1,6 @@
 {% assign slugified = project.data.title | slugify %}
-<div class="carousel__cell card card--with-image">
-  <article class="container--smallest">
+<artcile class="carousel__cell card card--with-image">
+  <div class="container--smallest">
     <h3 class="header__big">{{project.data.title}}</h3>
     <h4>{{project.data.subtitle}}</h4>
     <p><a href="/projeto/{{ slugified }}">Ver mais detalhes</a></p>
@@ -24,7 +24,7 @@
         Visitar repositório
       </custom-anchor-with-icon>
     {% endif %}
-  </article>
+  </div>
   <!-- Defines filePath -->
   {% assign fileName = slugified | append:"-cover.jpg"  %}
   {% assign filePath = "./client/assets/image/project/" | append: fileName %}
@@ -34,4 +34,4 @@
 
   <!-- Create image -->
   {% image filePath, alt, null %}
-</div>
+</artcile>
