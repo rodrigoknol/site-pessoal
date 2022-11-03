@@ -1,3 +1,5 @@
+@import "/css/styled/icon.css";
+
 /* General / Generics */
 :root {
   scroll-behavior: smooth;
@@ -259,11 +261,6 @@ footer {
   height: 100vh;
   margin: 5rem 0;
   box-shadow: inset 0.3rem 0.3rem 1.5rem 1px var(--color-base-20);
-}
-
-.icon {
-  height: 0.9rem;
-  width: initial;
 }
 
 img {

@@ -1,6 +1,2 @@
 @import "/css/styled/anchor.css";
-
-img {
-  height: 0.9rem;
-  width: initial;
-}
+@import "/css/styled/icon.css";
