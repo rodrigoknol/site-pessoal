@@ -16,7 +16,7 @@ O site era o principal canal de comunicação com clientes e parceiros, aquisiç
 
 O primeiro motivo foi relacionado a mobLee e seus produtos. Se antes o carro chefe eram aplicativos para eventos white-label, em 2017 a mobLee lançou uma plataforma com 4 produtos. Toda a comunicação da empresa, assim como seu site, era focada no aplicativo para eventos, com os novos produtos, ele divide o espaço de igual para igual com outras 3 soluções.
 
-![Os 4 produtos que a mobLee oferece](.client/assets/image/blog/moblee-products.png)
+![Os 4 produtos que a mobLee oferece](/image/blog/moblee-products.png)
 Esse motivo sozinho já tornou necessário o redesenho do site e suas páginas, mas foram motivos mais técnicos que fizeram o time de marketing tomar a decisão radical de refazer o site inteiro do zero, não reaproveitando nenhuma linha de código do site antigo.
 
 Em resumo, o site antigo apesar de ter um bom layout, “por baixo do capô” tinha um código bastante deficiente e lento, é como se por fora o site fosse o carrão do ano mas, por dentro, estivesse rodando com um motor de fiat 147.
