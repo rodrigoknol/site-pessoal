@@ -93,10 +93,6 @@ aside {
   padding: 1rem;
 }
 
-nav {
-  display: none;
-}
-
 .nudge {
   position: sticky;
   top: 0;
