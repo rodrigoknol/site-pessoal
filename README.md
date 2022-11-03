@@ -22,7 +22,7 @@ Com o respositório salvo localmente, você entra na pasta raiz do projeto e exe
 - Git por Andrejs Kirma encontrado no https://nounproject.com
 - Wave por Ecem Afacan encontrado no https://nounproject.com
 
-### Ícones usados como ilustrações
+### Ícones usados como base para ilustrações
 - Briefing por sripfoto encontrado no https://nounproject.com
 - Compass por Mada Creative encontrado no https://nounproject.com
 - Magnifying Glass por ibrandify encontrado no https://nounproject.com
