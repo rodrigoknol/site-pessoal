@@ -6,9 +6,11 @@ customElements.define(
       const shadowRoot = this.attachShadow({ mode: "open" });
       const template = document.getElementById("aside-template").content;
 
-      const headings = [...document.getElementsByTagName("h2")];
-      const navigator = template.querySelector("#navigation");
+      const headings = [...document.getElementsByTagName("h2")].filter(
+        (heading) => heading.innerText !== "Contato"
+      );
 
+      const navigator = template.querySelector("#navigation");
       const listEl = document.createElement("li");
       const anchorEl = document.createElement("a");
 
