@@ -7,7 +7,6 @@ customElements.define(
       const template = document.getElementById("nudge-template").content;
       const anchor = template.querySelector(".anchor");
       anchor.href = this.getAttribute("href") || "/";
-      console.log(this.getAttribute("href"));
 
       shadowRoot.appendChild(template.cloneNode(true));
     }
