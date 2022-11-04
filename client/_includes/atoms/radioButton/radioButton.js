@@ -12,9 +12,10 @@ class RadioButton extends HTMLElement {
     input.id = this.getAttribute("identifier");
     input.value = this.getAttribute("value");
     input.name = this.getAttribute("form");
+    input.checked = !!this.getAttribute("checked");
 
     const label = template.querySelector("label");
-    label.for = this.getAttribute("identifier");
+    label.htmlFor = this.getAttribute("identifier");
 
     shadowRoot.appendChild(template.cloneNode(true));
   }

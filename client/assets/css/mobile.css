@@ -77,11 +77,6 @@ h4,
   z-index: 100;
 }
 
-.tabs--controller {
-  overflow: auto;
-  gap: 0.5rem;
-}
-
 .hidden-desktop {
   display: initial;
 }

@@ -1,0 +1,9 @@
+@import "/css/typography.css";
+
+.tabs--panel {
+  display: none;
+}
+
+.tabs--panel .header__big {
+  margin-top: 1rem;
+}

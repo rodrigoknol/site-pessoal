@@ -1,0 +1,14 @@
+<template id="tab-content-template">
+  <style>
+    {% include "molecules/tabContent/tabContent.css" %}
+  </style>
+  <div class="tabs--panel">
+    <slot name="image"></slot>
+    <h3 class="header__big"></h3>
+    <slot></slot>
+  </div>
+</template>
+
+<script>
+  {% include "molecules/tabContent/tabContent.js" %}
+</script>

@@ -1,0 +1,11 @@
+.tabs--controller {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 1300px) {
+  .tabs--controller {
+    overflow: auto;
+    gap: 0.5rem;
+  }
+}

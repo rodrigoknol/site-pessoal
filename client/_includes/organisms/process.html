@@ -10,17 +10,22 @@
 
 <custom-card>
   <b class="hidden-desktop">Arraste para o lado</b>
-  <form class="tabs--controller">
+  <custom-tab
+    name="tabset"
+  >
     <custom-radio-button
+      slot="tab"
       identifier="tab1"
       value="preProject"
       form="tabset"
       icon="double_diamond-empty"
       alt="o double diamond vazio"
+      checked="true"
     >
       Pré Projeto
     </custom-radio-button>
     <custom-radio-button
+      slot="tab"
       identifier="tab2"
       value="discovery"
       form="tabset"
@@ -30,6 +35,7 @@
       Discovery
     </custom-radio-button>
     <custom-radio-button
+      slot="tab"
       identifier="tab3"
       value="explore"
       form="tabset"
@@ -39,6 +45,7 @@
       Explore
     </custom-radio-button>
     <custom-radio-button
+      slot="tab"
       identifier="tab4"
       value="develop"
       form="tabset"
@@ -48,6 +55,7 @@
       Develop
     </custom-radio-button>
     <custom-radio-button
+      slot="tab"
       identifier="tab5"
       value="deliver"
       form="tabset"
@@ -57,6 +65,7 @@
       Deliver
     </custom-radio-button>
     <custom-radio-button
+      slot="tab"
       identifier="tab6"
       value="evolution"
       form="tabset"
@@ -65,12 +74,11 @@
     >
       Evolução contínua
     </custom-radio-button>
-  </form>
 
-  <div class="tabs--panels">
-    <div id="preProject" class="tabs--panel">
-      {% image "./client/assets/image/illustration/pre-project.svg", "ilustração lúdica representando o double diamond", null %}
-      <h3 class="header__big">O começo</h3>
+    <custom-tab-content identificator="preProject" title="O começo">
+      <div slot="image" class="image">
+        {% image "./client/assets/image/illustration/pre-project.svg", "ilustração lúdica representando o double diamond", null %}
+      </div>
       <p>
         Conhecer o projeto e os seus objetivos. As principais perguntas a
         responder: Quem está envolvido, o que já se sabe, quais os desafios já
@@ -91,11 +99,11 @@
         >
         apresento o briefing de um dos projetos que executei.
       </p>
-    </div>
-
-    <div id="discovery" class="tabs--panel">
-      {% image "./client/assets/image/illustration/discovery.svg", "ilustração lúdica representando o double diamond", null %}
-      <h3 class="header__big">Diminuindo incertezas</h3>
+    </custom-tab-content>
+    <custom-tab-content identificator="discovery" title="Diminuindo incertezas">
+      <div slot="image" class="image">
+        {% image "./client/assets/image/illustration/discovery.svg", "ilustraçãolúdica representando o double diamond", null %}
+      </div>
       <p>
         A hora de expandir o conhecimento, entender mais a fundo quem vai usar,
         quais os problemas que existem hoje, como concorrentes, similares e
@@ -127,11 +135,11 @@
         >
         tem alguns exemplos dos entregáveis da etapa de discovery desse projeto.
       </p>
-    </div>
-
-    <div id="explore" class="tabs--panel">
-      {% image "./client/assets/image/illustration/explore.svg", "ilustração lúdica representando o double diamond", null %}
-      <h3 class="header__big">Experimentando caminhos</h3>
+    </custom-tab-content>
+    <custom-tab-content identificator="explore" title="Experimentando caminhos">
+      <div slot="image" class="image">
+        {% image "./client/assets/image/illustration/explore.svg", "ilustração lúdica representando o double diamond", null %}
+      </div>
       <p>
         Transformando ideias em propostas, afunilando o conhecimento e
         destilando jornadas.
@@ -153,11 +161,11 @@
         que tive total controle sobre todos os aspectos do projeto e
         entregáveis.
       </p>
-    </div>
-
-    <div id="develop" class="tabs--panel">
-      {% image "./client/assets/image/illustration/develop.svg", "ilustração lúdica representando o double diamond", null %}
-      <h3 class="header__big">Mãos na massa</h3>
+    </custom-tab-content>
+    <custom-tab-content identificator="develop" title="Mãos na massa">
+      <div slot="image" class="image">
+        {% image "./client/assets/image/illustration/develop.svg", "ilustração lúdica representando o double diamond", null %}
+      </div>
       <p>
         Com o caminho desenhado, ambientes preparados stack escolhidas e
         jornadas testadas, está na hora de começar a montar a primeira versão do
@@ -176,11 +184,11 @@
         >, construído junto com um novo blog, é um exemplo de um projeto com um
         backlog complexo entregue em pouco tempo.
       </p>
-    </div>
-
-    <div id="deliver" class="tabs--panel">
-      {% image "./client/assets/image/illustration/deliver.svg", "ilustração lúdica representando o double diamond", null %}
-      <h3 class="header__big">Voilà!</h3>
+    </custom-tab-content>
+    <custom-tab-content identificator="deliver" title="Voilà!">
+      <div slot="image" class="image">
+        {% image "./client/assets/image/illustration/deliver.svg", "ilustração lúdica representando o double diamond", null %}
+      </div>
       <p>
         A primeira versão, está no ar! Esta é a hora de lançamento 🍾 e começar
         a medir 📐 para melhorar.
@@ -192,11 +200,14 @@
         <li>Configuração de domínio;</li>
         <li>Entrega em ambiente de produção.</li>
       </ul>
-    </div>
-
-    <div id="evolution" class="tabs--panel">
-      {% image "./client/assets/image/illustration/evolution.svg", "ilustração lúdica representando o double diamond", null %}
-      <h3 class="header__big">Projetos digitais nunca acabam</h3>
+    </custom-tab-content>
+    <custom-tab-content
+      identificator="evolution"
+      title="Projetos digitais nunca acabam"
+    >
+      <div slot="image" class="image">
+        {% image "./client/assets/image/illustration/evolution.svg", "ilustração lúdica representando o double diamond", null %}
+      </div>
       <p>
         A principal vantagem de um projeto digital é que mesmo depois de
         lançado, ele pode ser atualizado e melhorado sem recalls. Está na hora
@@ -219,7 +230,6 @@
         <li>Acompanhar (checar);</li>
         <li>Agir.</li>
       </ul>
-    </div>
-  </div>
+    </custom-tab-content>
+  </custom-tab>
 </custom-card>
-<script src="/js/tab.js"></script>

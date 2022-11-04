@@ -1,0 +1,15 @@
+<template id="tab-template">
+  <style>
+    {% include "organisms/tab/tab.css" %}
+  </style>
+  <form class="tabs--controller">
+    <slot name="tab"></slot>
+  </form>
+  <div class="tabs--panels">
+    <slot></slot>
+  </div>
+</template>
+
+<script>
+  {% include "organisms/tab/tab.js" %}
+</script>
