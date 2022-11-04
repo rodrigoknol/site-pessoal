@@ -1,7 +1,6 @@
 @import "/css/styled/icon.css";
 @import "/css/styled/nav.css";
 @import "/css/styled/tag-container.css";
-@import "/css/styled/card.css";
 
 /* General / Generics */
 :root {
@@ -265,7 +264,7 @@ th:first-child {
 }
 
 .tabs--controller input[type="radio"],
-.tabs .tabs--panel {
+.tabs--panel {
   display: none;
 }
 
