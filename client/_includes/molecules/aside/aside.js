@@ -4,6 +4,12 @@ class Aside extends HTMLElement {
     const shadowRoot = this.attachShadow({ mode: "open" });
     const template = document.getElementById("aside-template").content;
 
+    this.generateHeading(template);
+
+    shadowRoot.appendChild(template.cloneNode(true));
+  }
+
+  generateHeading(template) {
     const headings = [...document.getElementsByTagName("h2")].filter(
       (heading) => heading.innerText !== "Contato"
     );
@@ -23,8 +29,6 @@ class Aside extends HTMLElement {
       list.appendChild(anchor);
       navigator.appendChild(list);
     });
-
-    shadowRoot.appendChild(template.cloneNode(true));
   }
 }
 

@@ -5,13 +5,16 @@ aside {
   padding-left: 3.5rem;
   color: var(--color-base-20);
   box-sizing: border-box;
-  max-height: 100vh;
+  height: 100vh;
   overflow: auto;
 }
 
 p {
   font-size: 1.2rem;
   margin: 0 0 1.6rem;
+  position: sticky;
+  top: 0;
+  background-color: var(--background);
 }
 
 .aside--navigation {
@@ -24,7 +27,6 @@ p {
 }
 
 .aside--navigation-holder {
-  max-height: 50vh;
   overflow: auto;
 }
 
