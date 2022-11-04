@@ -12,13 +12,6 @@
   display: flex;
   gap: 3rem;
   align-items: center;
-}
-
-.carousel__cell {
-  position: absolute;
-  width: 100%;
-  transition: transform 1.2s;
-  backface-visibility: hidden;
   padding: calc(2.5 * var(--base-size));
 }
 

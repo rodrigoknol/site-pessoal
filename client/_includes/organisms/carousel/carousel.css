@@ -1,0 +1,50 @@
+.carousel__parent {
+  margin: 6rem 0;
+  position: relative;
+  perspective: 90rem;
+}
+
+.carousel {
+  transform-style: preserve-3d;
+  transition: transform 1.2s;
+  height: 100%;
+  width: 100%;
+}
+
+.carousel__controller {
+  position: absolute;
+  right: calc(-4 * var(--base-size));
+  top: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.carousel__controller > * {
+  flex: 2;
+  font-size: 2rem;
+  background-color: initial;
+  color: var(--color-anchor);
+  border: none;
+  cursor: pointer;
+  transition: color var(--transition-default);
+}
+
+.carousel__controller > *:hover {
+  color: var(--color-blue-20);
+}
+
+@media (max-width: 1300px) {
+  .carousel__parent {
+    margin: 6rem 0 3rem 0;
+    perspective: 50rem;
+  }
+  .carousel__controller {
+    top: -5rem;
+    right: 0;
+    left: 0;
+    bottom: initial;
+    flex-direction: initial;
+  }
+}

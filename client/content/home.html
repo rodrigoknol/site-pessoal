@@ -5,14 +5,54 @@ subtitle: Oi, sou o Rodrigo! Designer - User Experience e User Interface - e des
 permalink: "/"
 ---
 
-{% include "organisms/molding.html"%} 
-{% include "organisms/nav.html" %}
+{% include "organisms/molding.html"%} {% include "organisms/nav.html" %}
 
 <main>
   <section id="projects" class="container">
     <h2 class="header__max">Principais Projetos</h2>
-    {% assign loop = collections.projeto %} 
-    {% include "organisms/carousel.html" %}
+    {% assign loop = collections.projeto %}
+    <custom-carousel>
+      {% for project in loop reversed %}
+      <custom-card-carousel
+        title="{{project.data.title}}"
+        link="{{project.data.title | slugify}}"
+        class="carousel__cell"
+      >
+        <span slot="subtitle">{{project.data.subtitle}}</span>
+        <div slot="external">
+          {% if project.data.production %}
+          <custom-anchor-with-icon
+            href="{{project.data.production}}"
+            icon="external-link"
+            alt="âncora externa"
+          >
+            Acessar em produção
+          </custom-anchor-with-icon>
+          {% endif %} {% if project.data.repo %}
+          <custom-anchor-with-icon
+            href="{{project.data.repo}}"
+            icon="repo"
+            alt="repositório"
+          >
+            Visitar repositório
+          </custom-anchor-with-icon>
+          {% endif %}
+        </div>
+        <div slot="image" class="carousel__image">
+          <!-- Defines filePath -->
+          {% assign fileName = project.data.title | slugify |
+          append:"-cover.jpg" %} {% assign filePath =
+          "./client/assets/image/project/" | append: fileName %}
+
+          <!-- Defines alt -->
+          {% assign alt = "Foto de capa do " | append: project.data.title %}
+
+          <!-- Create image -->
+          {% image filePath, alt, null %}
+        </div>
+      </custom-card-carousel>
+      {% endfor %}
+    </custom-carousel>
   </section>
   <section id="process" class="container">
     <h2 class="header__max">Os Meus Processos</h2>
@@ -23,9 +63,8 @@ permalink: "/"
 
     <!-- Articles list -->
     <div class="container__flex">
-      {% for post in collections.artigo reversed %} 
-        {% include "molecules/card-blog-list.html" %} 
-      {% endfor %}
+      {% for post in collections.artigo reversed %} {% include
+      "molecules/card-blog-list.html" %} {% endfor %}
     </div>
   </section>
 </main>

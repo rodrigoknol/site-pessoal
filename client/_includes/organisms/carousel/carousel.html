@@ -1,0 +1,18 @@
+<template id="carousel-template">
+  <style>
+    {% include "organisms/carousel/carousel.css" %}
+  </style>
+  <div class="carousel__parent">
+    <div class="carousel__controller">
+      <button id="carouselNext">▲</button>
+      <button id="carouselPrevious">▼</button>
+    </div>
+    <div class="carousel">
+      <slot></slot>
+    </div>
+  </div>
+</template>
+
+<script>
+  {% include "organisms/carousel/carousel.js" %}
+</script>

@@ -47,26 +47,7 @@ button {
   cursor: pointer;
 }
 
-.carousel__parent {
-  margin: 7rem 0;
-  position: relative;
-  perspective: 72rem;
-}
-
-.carousel {
-  transform-style: preserve-3d;
-  transition: transform 1.2s;
-  height: 100%;
-  width: 100%;
-}
-
-.carousel__image > picture {
-  min-width: 1px;
-  height: 60vh;
-  max-height: 40rem;
-}
-
-.carousel__image > picture > * {
+.carousel__image picture > * {
   object-fit: cover;
   object-position: top left;
   min-width: 1px;
@@ -74,28 +55,11 @@ button {
   max-height: 40rem;
 }
 
-.carousel__controller {
+.carousel__cell {
   position: absolute;
-  right: calc(-4 * var(--base-size));
-  top: 0;
-  bottom: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
-
-.carousel__controller > * {
-  flex: 2;
-  font-size: 2rem;
-  background-color: initial;
-  color: var(--color-anchor);
-  border: none;
-  cursor: pointer;
-  transition: color var(--transition-default);
-}
-
-.carousel__controller > *:hover {
-  color: var(--color-blue-20);
+  width: 100%;
+  transition: transform 1.2s;
+  backface-visibility: hidden;
 }
 
 .chart__bar {
