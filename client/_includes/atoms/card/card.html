@@ -1,0 +1,12 @@
+<template id="card-template">
+  <style>
+    {% include "atoms/card/card.css" %}
+  </style>
+  <article class="card">
+    <slot>Conteúdo do card</slot>
+  </article>
+</template>
+
+<script>
+  {% include "atoms/card/card.js" %}
+</script>

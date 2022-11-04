@@ -1,6 +1,7 @@
 @import "/css/styled/icon.css";
 @import "/css/styled/nav.css";
 @import "/css/styled/tag-container.css";
+@import "/css/styled/card.css";
 
 /* General / Generics */
 :root {
@@ -45,39 +46,6 @@ h1::selection {
 
 button {
   cursor: pointer;
-}
-
-.card {
-  background-color: white;
-  border-radius: 1.5rem;
-  box-shadow: 0.3rem 0.3rem 1.5rem 1px var(--shadow);
-  box-sizing: border-box;
-  padding: 2rem 1rem;
-}
-
-.card--with-image {
-  display: flex;
-  gap: 3rem;
-  align-items: center;
-}
-
-.card--with-image > * {
-  flex: 1 1 0;
-}
-
-.card--with-image > picture {
-  flex: 2;
-  min-width: 1px;
-  height: 60vh;
-  max-height: 40rem;
-}
-
-.card--with-image > picture > img {
-  object-fit: cover;
-  object-position: top left;
-  min-width: 1px;
-  height: 60vh;
-  max-height: 40rem;
 }
 
 .carousel__parent {

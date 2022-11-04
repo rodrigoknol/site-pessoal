@@ -14,15 +14,6 @@ h4,
   margin-top: 1.5rem;
 }
 
-.card--with-image {
-  padding: 2rem 1rem;
-  gap: 0;
-}
-
-.card--with-image picture {
-  display: none;
-}
-
 .carousel__controller {
   top: -5rem;
   right: 0;
