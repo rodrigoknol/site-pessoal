@@ -1,4 +1,5 @@
 const tabs = [...document.getElementsByName("tabset")];
+console.log(tabs)
 
 tabs.map((tab) => {
   tab.addEventListener("click", openTab);

@@ -1,0 +1,27 @@
+@import "/css/styled/icon.css";
+
+label {
+  font-weight: 500;
+  cursor: pointer;
+  color: var(--color-anchor);
+  background-color: var(--color-base-50);
+  padding: 1rem 1.25rem;
+  border-radius: 1rem;
+  display: block;
+}
+
+input:checked ~ label {
+  color: var(--color-text-primary);
+  background: none;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+@media (max-width: 1300px) {
+  div {
+    min-width: 60%;
+    z-index: 2;
+  }
+}

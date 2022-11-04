@@ -11,77 +11,60 @@
 <custom-card>
   <b class="hidden-desktop">Arraste para o lado</b>
   <form class="tabs--controller">
-    <div>
-      <input type="radio" name="tabset" id="tab1" value="preProject" checked />
-      <label for="tab1">
-        <img
-          src="/image/icons/double_diamond-empty.svg"
-          class="icon"
-          alt="ícone representando o double diamond vazio"
-        />
-        Pré Projeto
-      </label>
-    </div>
-
-    <div>
-      <input type="radio" name="tabset" id="tab2" value="discovery" />
-      <label for="tab2">
-        <img
-          src="/image/icons/double_diamond-1.svg"
-          class="icon"
-          alt="ícone representando o double diamond com destaque para a primeira etapa"
-        />
-        Discovery
-      </label>
-    </div>
-
-    <div>
-      <input type="radio" name="tabset" id="tab3" value="explore" />
-      <label for="tab3">
-        <img
-          src="/image/icons/double_diamond-2.svg"
-          class="icon"
-          alt="ícone representando o double diamond com destaque para a segunda etapa"
-        />
-        Explore
-      </label>
-    </div>
-
-    <div>
-      <input type="radio" name="tabset" id="tab4" value="develop" />
-      <label for="tab4">
-        <img
-          src="/image/icons/double_diamond-3.svg"
-          class="icon"
-          alt="ícone representando o double diamond com destaque para a terceira etapa"
-        />
-        Develop
-      </label>
-    </div>
-
-    <div>
-      <input type="radio" name="tabset" id="tab5" value="deliver" />
-      <label for="tab5">
-        <img
-          src="/image/icons/double_diamond-4.svg"
-          class="icon"
-          alt="ícone representando o double diamond com destaque para a última etapa"
-        />
-        Deliver
-      </label>
-    </div>
-
-    <div>
-      <input type="radio" name="tabset" id="tab6" value="evolution" />
-      <label for="tab6">
-        <img
-          src="/image/icons/double_diamond-full.svg"
-          class="icon"
-          alt="ícone representando o double diamond cheio"
-        />
-        Evolução contínua
-      </label>
-    </div>
+    <custom-radio-button
+      identifier="tab1"
+      value="preProject"
+      form="tabset"
+      icon="double_diamond-empty"
+      alt="o double diamond vazio"
+    >
+      Pré Projeto
+    </custom-radio-button>
+    <custom-radio-button
+      identifier="tab2"
+      value="discovery"
+      form="tabset"
+      icon="double_diamond-1"
+      alt="o double diamond com destaque para a primeira etapa"
+    >
+      Discovery
+    </custom-radio-button>
+    <custom-radio-button
+      identifier="tab3"
+      value="explore"
+      form="tabset"
+      icon="double_diamond-2"
+      alt="o double diamond com destaque para a segunda etapa"
+    >
+      Explore
+    </custom-radio-button>
+    <custom-radio-button
+      identifier="tab4"
+      value="develop"
+      form="tabset"
+      icon="double_diamond-3"
+      alt="o double diamond com destaque para a terceira etapa"
+    >
+      Develop
+    </custom-radio-button>
+    <custom-radio-button
+      identifier="tab5"
+      value="deliver"
+      form="tabset"
+      icon="double_diamond-4"
+      alt="o double diamond com destaque para a última etapa"
+    >
+      Deliver
+    </custom-radio-button>
+    <custom-radio-button
+      identifier="tab6"
+      value="evolution"
+      form="tabset"
+      icon="double_diamond-full"
+      alt="o double diamond cheio"
+    >
+      Evolução contínua
+    </custom-radio-button>
   </form>
 
   <div class="tabs--panels">
