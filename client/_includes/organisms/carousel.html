@@ -5,8 +5,43 @@
   </div>
   <div class="carousel">
     {% for project in loop reversed %}
-      {% include "molecules/card-carousel.html" %}
+    <custom-card-carousel
+      title="{{project.data.title}}"
+      link="{{project.data.title | slugify}}"
+    >
+      <span slot="subtitle">{{project.data.subtitle}}</span>
+      <div slot="external">
+        {% if project.data.production %}
+        <custom-anchor-with-icon
+          href="{{project.data.production}}"
+          icon="external-link"
+          alt="âncora externa"
+        >
+          Acessar em produção
+        </custom-anchor-with-icon>
+        {% endif %} {% if project.data.repo %}
+        <custom-anchor-with-icon
+          href="{{project.data.repo}}"
+          icon="repo"
+          alt="repositório"
+        >
+          Visitar repositório
+        </custom-anchor-with-icon>
+        {% endif %}
+      </div>
+      <div slot="image" class="carousel__image">
+        <!-- Defines filePath -->
+        {% assign fileName = project.data.title | slugify | append:"-cover.jpg" %} 
+        {% assign filePath = "./client/assets/image/project/" | append: fileName %}
+
+        <!-- Defines alt -->
+        {% assign alt = "Foto de capa do " | append: project.data.title %}
+
+        <!-- Create image -->
+        {% image filePath, alt, null %}
+      </div>
+    </custom-card-carousel>
     {% endfor %}
   </div>
 </div>
-<script async src="/js/carousel.js"></script>
+<script async defer src="/js/carousel.js"></script>

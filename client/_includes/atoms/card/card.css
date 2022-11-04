@@ -1,7 +1,35 @@
+@import "/css/typography.css";
+
 .card {
   background-color: white;
   border-radius: 1.5rem;
   box-shadow: 0.3rem 0.3rem 1.5rem 1px var(--shadow);
   box-sizing: border-box;
   padding: 2rem 1rem;
+}
+
+.card--with-image {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+}
+
+.carousel__cell {
+  position: absolute;
+  width: 100%;
+  transition: transform 1.2s;
+  backface-visibility: hidden;
+  padding: calc(2.5 * var(--base-size));
+}
+
+.container--smallest {
+  width: 30rem;
+  max-width: 100%;
+}
+
+@media (max-width: 50rem) {
+  .card--with-image {
+    padding: 2rem 1rem;
+    gap: 0;
+  }
 }

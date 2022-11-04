@@ -61,12 +61,18 @@ button {
   width: 100%;
 }
 
-.carousel__cell {
-  position: absolute;
-  width: 100%;
-  transition: transform 1.2s;
-  backface-visibility: hidden;
-  padding: calc(2.5 * var(--base-size));
+.carousel__image > picture {
+  min-width: 1px;
+  height: 60vh;
+  max-height: 40rem;
+}
+
+.carousel__image > picture > * {
+  object-fit: cover;
+  object-position: top left;
+  min-width: 1px;
+  height: 60vh;
+  max-height: 40rem;
 }
 
 .carousel__controller {

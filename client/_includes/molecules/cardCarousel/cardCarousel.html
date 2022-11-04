@@ -1,0 +1,13 @@
+<template id="card-carousel-template">
+  <div class="container--smallest">
+    <h3 class="header__big"></h3>
+    <h4><slot name="subtitle"></slot></h4>
+    <p><a class="anchor">Ver mais detalhes</a></p>
+    <slot name="external"></slot>
+  </div>
+  <slot name="image"></slot>
+</template>
+
+<script>
+  {% include "molecules/cardCarousel/cardCarousel.js" %}
+</script>
