@@ -6,20 +6,21 @@ challenges: O Gerencia leite é um projeto muito especial para mim, onde além d
 layout: case.html
 production: "https://gerencialeite.com.br/"
 tags:
- - design
- - desenvolvimento
- - gestão de produto
- - projeto
+  - design
+  - desenvolvimento
+  - gestão de produto
+  - projeto
 ---
 
 ## Como foi resolvido
+
 O projeto vem evoluindo nos últimos anos, iniciou baseado nos trabalhos de um MVP em planilha criado pelo prof. André Thaler da UDESC. O projeto pode ser dividido em duas partes, uma antes do lançamento, onde seguiu uma jornada de desenvolvimento de design, e depois do lançamento trabalhando em [ciclos de PDCA](https://endeavor.org.br/estrategia-e-gestao/pdca/) (Plan, Do, Check, Act), com insumos de dados de Analytics e em especial feedback dos usuários.
 
 Sendo um projeto ágil e digital, está em constante evolução, e por ser um time bastante enxuto (bastante mesmo), as decisões de arquitetura de software foram tomadas pensando não apenas em escala, mas escala casada com agilidade para desenvolver e fazer deploys estando sozinho.
 
 ### Desenvolvimento
 
-O Projeto começou com mais desenvolvedores, e em uma stack “padrão”, conhecida como MERN (MongoDB, Express JS, React JS and Node JS), o front com deploy pelo [Netlify](https://www.netlify.com/), e o Back hospedado no heroku (https://www.heroku.com/) , ambos na versão gratuita.
+O Projeto começou com mais desenvolvedores, e em uma stack “padrão”, conhecida como MERN (MongoDB, Express JS, React JS and Node JS), o front com deploy pelo [Netlify](https://www.netlify.com/), e o Back hospedado no [Heroku](https://www.heroku.com/) , ambos na versão gratuita.
 
 Nessa primeira stack, com o tempo, e com a pressa que foi desenvolvido, sem documentação, sem testes unitários, e com o alto tempo de aquecimento do Heroku versão gratuita, aos poucos o projeto se tornou insustentável.
 
@@ -30,6 +31,7 @@ O time diminuiu, e o projeto ficou lento, e com bastante débito técnico. Decid
 É claro, não repetindo os mesmos erros do passado, aproveitei para fazer uma [documentação](https://app.gerencialeite.com.br/js/README.md) ampla e sempre atualizada, além de adicionar testes unitários, e colocar eles dentro do fluxo de deploy.
 
 Essa nova stack é ideal? Não necessariamente, mas conseguiu o que eu precisava, que era:
+
 - Mais agilidade para desenvolver;
 - Deploy simplificado;
 - Back-end mais rápido e responsivo.
