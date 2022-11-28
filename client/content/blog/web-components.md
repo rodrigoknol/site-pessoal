@@ -1,7 +1,7 @@
 ---
 layout: blog.html
 title: "Web Components - O que são? Onde vivem? O que comem?"
-subtitle: "Eles trazem consigo a bagagem de resolver problemas web sem reinventar a roda, como os navegadores resolvem, e oferecendo familiaridade de abraçar as regras, APIs, padrões e ideias que já vem embarcadas na internet, sem precisar (re)aprender a aplicar ideias conforme uma biblioteca, ou framework exige."
+subtitle: "Eles trazem consigo a vantagem de resolver problemas web sem reinventar a roda, como os navegadores resolvem, e oferecendo familiaridade de abraçar as regras, APIs, padrões e ideias que já vem embarcadas na internet, sem precisar (re)aprender a aplicar ideias conforme uma biblioteca, ou framework exige."
 tags:
   - desenvolvimento
   - artigo
@@ -11,7 +11,7 @@ Os Web componentes são um agregado de algumas técnicas e tecnologias web, em e
 
 O seu real poder vai além da performance de rodarem nativamente, mas de como, por natureza, podem trabalhar junto, apoiando bibliotecas e frameworks.
 
-Eles trazem consigo a bagagem de resolver problemas web sem reinventar a roda, como os navegadores resolvem, e oferecendo familiaridade de abraçar as regras, APIs, padrões e ideias que já vem embarcadas na internet, sem precisar recorrer a coisas como “jeito React”, ou precisar (re)aprender a aplicar ideias conforme uma biblioteca, ou framework exige. Web componentes dão a chance de abraçar abstrações ao mesmo tempo que quando e, se preciso, mergulhar fundo em como o DOM realmente trabalha, e fazer ajustes de forma nativa, sem precisar ficar preso a forma de trabalho de uma ou outra ferramenta.
+Eles trazem consigo a vantagem de resolver problemas web sem reinventar a roda, como os navegadores resolvem, e oferecendo familiaridade de abraçar as regras, APIs, padrões e ideias que já vem embarcadas na internet, sem precisar recorrer a coisas como “jeito React”, ou precisar (re)aprender a aplicar ideias conforme uma biblioteca, ou framework exige. Web componentes dão a chance de abraçar abstrações ao mesmo tempo que quando e, se preciso, mergulhar fundo em como o DOM realmente trabalha, e fazer ajustes de forma nativa, sem precisar ficar preso a forma de trabalho de uma ou outra ferramenta.
 
 Uma boa “DX” - experiência para o desenvolvedor - em trabalhos digitais é primordial para projetos evoluirem de forma rápida e eficiente, e bibliotecas e frameworks de front-end abstraem a necessidade de lidar diretamente com Shadow DOM, de ajudar o browser a elencar o que e como renderizar, entre outros pontos para assim o programador focar no desenvolvimento de produtos, e não na tecnologia por trás.
 
