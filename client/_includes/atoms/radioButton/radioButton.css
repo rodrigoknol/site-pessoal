@@ -1,4 +1,4 @@
-@import "/css/styled/icon.css";
+{% include "atoms/icon/icon.css" %}
 
 label {
   font-weight: 500;

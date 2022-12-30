@@ -1,2 +1,2 @@
-@import "/css/styled/anchor.css";
-@import "/css/styled/icon.css";
+{% include "atoms/anchor/anchor.css" %}
+{% include "atoms/icon/icon.css" %}

@@ -1,4 +1,4 @@
-@import "/css/styled/tag-container.css";
+{% include "atoms/tag/tag-container.css" %}
 
 aside {
   padding-left: 3.5rem;
