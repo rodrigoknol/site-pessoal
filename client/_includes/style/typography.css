@@ -108,3 +108,31 @@ a:not(.button):before {
 a:not(.button):hover:before {
   filter: opacity(1);
 }
+
+.container--small p:first-of-type::first-letter {
+  float: left;
+  font-weight: 900;
+  font-size: 5.5rem;
+  line-height: 1;
+  margin: 0.25rem 0.5rem -0.5rem 0;
+  font-family: "Volkorn", var(--font-family);
+  color: var(--color-yellow-0);
+}
+
+@media (max-width: 1300px) {
+  h1,
+  .header__max {
+    font-size: 2.75rem;
+    background: none;
+    background-clip: initial;
+    -webkit-text-fill-color: initial;
+    color: var(--color-text-primary);
+  }
+
+  h2,
+  h3,
+  h4,
+  .header__big {
+    margin-top: 1.5rem;
+  }
+}

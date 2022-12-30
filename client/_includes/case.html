@@ -3,6 +3,10 @@ layout: header.html
 permalink: "projeto/{{ title | slugify }}/"
 ---
 
+<style>
+  {% include "style/case.css" %}
+</style>
+
 <custom-nudge>⏎ Voltar para o início</custom-nudge>
 
 <main>
@@ -76,3 +80,7 @@ permalink: "projeto/{{ title | slugify }}/"
 </main>
 
 {% include "organisms/footer/footer.html" %}
+
+<!-- Templates -->
+{% include "atoms/nudge/nudge.html" %}
+{% include "atoms/card/card.html" %}

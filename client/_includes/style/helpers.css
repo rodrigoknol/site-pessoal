@@ -1,0 +1,30 @@
+.background__primary {
+  background-color: var(--color-primary);
+}
+
+.background__primary-40 {
+  background-color: var(--color-primary-40);
+}
+
+.full-width {
+  width: 100%;
+  max-width: 100%;
+}
+
+.hidden-desktop {
+  display: none;
+}
+
+.no-style {
+  border: inherit;
+  background: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+@media (max-width: 1300px) {
+  .hidden-desktop {
+    display: initial;
+  }
+  
+}

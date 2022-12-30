@@ -5,6 +5,10 @@ subtitle: Oi, sou o Rodrigo! Desenvolvedor e designer. Faço sites e bons risoto
 permalink: "/"
 ---
 
+<style>
+  {% include "style/home.css" %}
+</style>
+
 {% include "organisms/molding/molding.html"%} 
 {% include "organisms/nav/nav.html" %}
 
@@ -70,3 +74,13 @@ permalink: "/"
 </main>
 
 {% include "organisms/footer/footer.html" %}
+
+<!-- Templates -->
+{% include "atoms/radioButton/radioButton.html" %}
+{% include "atoms/card/card.html" %}
+
+{% include "molecules/cardCarousel/cardCarousel.html" %}
+{% include "molecules/tabContent/tabContent.html" %}
+
+{% include "organisms/carousel/carousel.html" %}
+{% include "organisms/tab/tab.html" %}

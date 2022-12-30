@@ -1,0 +1,29 @@
+.container {
+  width: 60rem;
+  max-width: 90vw;
+  margin: auto;
+  box-sizing: border-box;
+}
+
+.container--small {
+  width: 42rem;
+  max-width: 100%;
+}
+
+.container--smallest {
+  width: 30rem;
+  max-width: 100%;
+}
+
+.container__flex {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+}
+
+@media (max-width: 1300px) {
+  .container {
+    max-width: 100%;
+    padding: 0 0.5rem;
+  }
+}

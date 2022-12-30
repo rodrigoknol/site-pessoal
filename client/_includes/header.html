@@ -90,41 +90,26 @@
       href="/image/favicon/favicon-16x16.png"
     />
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="/css/style.css?ver=1.0" />
-    <link
-      rel="stylesheet"
-      href="/css/mobile.css?ver=1.0"
-      media="(max-width: 50rem)"
-    />
-
     <!-- Title -->
     <title>{{title}}</title>
   </head>
+   <!-- Main styling -->
+   <style>
+    {% include "style/colors.css" %}
+    {% include "style/helpers.css" %}
+    {% include "style/presets.css" %}
+    {% include "style/typography.css" %}
+    {% include "style/container.css" %}
+    {% include "style/animation.css" %}  
+  </style>
+
   <body>
-    <!-- Inline CSS for first fold -->
-    <style>
-      {% include "style/colors.css" %}
-      {% include "style/animation.css" %}
-      {% include "style/presets.css" %}
-      {% include "style/typography.css" %}
-    </style>
-
-    {{content}}
+    {{content}} 
   </body>
-  <link rel="stylesheet" href="/css/imports.css?ver=1.0" />
 
-  <!-- Components -->
+  <!-- Global components -->
   {% include "atoms/anchorWithIcon/anchor-with-icon.html" %}
-  {% include "atoms/nudge/nudge.html" %}
   {% include "atoms/tag/tag.html" %}
-  {% include "atoms/card/card.html" %}
-  {% include "atoms/radioButton/radioButton.html" %}
 
-  {% include "molecules/aside/aside.html" %}
-  {% include "molecules/cardCarousel/cardCarousel.html" %}
-  {% include "molecules/tabContent/tabContent.html" %}
-  
-  {% include "organisms/carousel/carousel.html" %}
-  {% include "organisms/tab/tab.html" %}
+  <link rel="stylesheet" href="/css/imports.css?ver=1.0" />
 </html>
