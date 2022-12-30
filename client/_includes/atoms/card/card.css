@@ -1,4 +1,4 @@
-@import "/css/typography.css";
+{% include "style/typography.css" %}
 
 .card {
   background-color: white;

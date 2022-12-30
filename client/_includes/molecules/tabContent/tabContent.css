@@ -1,4 +1,4 @@
-@import "/css/typography.css";
+{% include "style/typography.css" %}
 
 .tabs--panel {
   display: none;
