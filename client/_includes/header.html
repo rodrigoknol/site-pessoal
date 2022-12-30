@@ -9,46 +9,107 @@
     <meta name="author" content="Rodrigo Thaler Knolseisen" />
     <meta name="application-name" content="Rodrigo T Knol" />
     <meta name="description" content="{{subtitle}}" />
-    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-    <meta name="theme-color" content="#fafaff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#fafaff" />
 
-     <!-- Meta / Open Graph -->
-     <meta property="og:locale" content="pt_BR" />
-     <meta property="og:image" content="/image/og/og.png" />
-     <meta property="og:image:type" content="image/png" />
-     <meta property="og:image:width" content="1500" />
-     <meta property="og:image:height" content="1500" />
+    <!-- Meta / Open Graph -->
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:image" content="/image/og/og.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1500" />
+    <meta property="og:image:height" content="1500" />
 
     <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="57x57" href="/image/favicon/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="/image/favicon/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="/image/favicon/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="/image/favicon/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="/image/favicon/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="/image/favicon/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="/image/favicon/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="/image/favicon/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/image/favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="/image/favicon/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/image/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="/image/favicon/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/image/favicon/favicon-16x16.png">
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="/image/favicon/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="/image/favicon/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="/image/favicon/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="/image/favicon/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="/image/favicon/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="/image/favicon/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="/image/favicon/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="/image/favicon/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/image/favicon/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="/image/favicon/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/image/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="/image/favicon/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/image/favicon/favicon-16x16.png"
+    />
 
     <!-- CSS -->
-    <link rel="stylesheet" href="/css/typography.css?ver=1.0" />
     <link rel="stylesheet" href="/css/style.css?ver=1.0" />
     <link
       rel="stylesheet"
       href="/css/mobile.css?ver=1.0"
       media="(max-width: 50rem)"
     />
-    <link rel="stylesheet" href="/css/colors.css?ver=1.0" />
-    <link rel="stylesheet" href="/css/animation.css?ver=1.0" />
 
     <!-- Title -->
     <title>{{title}}</title>
   </head>
   <body>
+    <!-- Inline CSS for first fold -->
+    <style>
+      {% include "style/colors.css" %}
+      {% include "style/animation.css" %}
+      {% include "style/presets.css" %}
+      {% include "style/typography.css" %}
+    </style>
+
     {{content}}
   </body>
   <link rel="stylesheet" href="/css/imports.css?ver=1.0" />
@@ -63,7 +124,7 @@
   {% include "molecules/aside/aside.html" %}
   {% include "molecules/cardCarousel/cardCarousel.html" %}
   {% include "molecules/tabContent/tabContent.html" %}
-
+  
   {% include "organisms/carousel/carousel.html" %}
   {% include "organisms/tab/tab.html" %}
 </html>

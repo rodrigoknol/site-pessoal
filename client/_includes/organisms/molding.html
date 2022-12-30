@@ -1,3 +1,30 @@
+<style>
+  .molding {
+    background: var(--color-blue-50);
+    background-image: url("/image/pattern/wave.svg");
+    margin: var(--base-size);
+    margin-bottom: 0;
+    padding: 1rem;
+    min-height: calc(100vh - 5rem);
+    box-sizing: border-box;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+  }
+
+  .molding .container {
+    padding: 2rem;
+    -webkit-backdrop-filter: blur(calc(0.2 * var(--base-size)));
+    backdrop-filter: blur(calc(0.2 * var(--base-size)));
+    border-radius: 1.5rem;
+    box-sizing: initial;
+  }
+
+  .molding .container h1 {
+    margin-top: 0;
+  }
+</style>
+
 <header class="molding">
   <article class="container container--smallest">
     <h1>
