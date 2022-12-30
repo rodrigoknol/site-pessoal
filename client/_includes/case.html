@@ -10,6 +10,9 @@ permalink: "projeto/{{ title | slugify }}/"
     <section class="container--smallest">
       <h1>{{title}}</h1>
       <h2 class="subtitle">{{subtitle}}</h2>
+      <style>
+        {% include "atoms/tag/tag-container.css" %}
+      </style>
       <div class="tag--container">
         {% for tag in tags %}
           <custom-tag type="{{tag | slugify}}">{{tag}}</custom-tag>
@@ -72,4 +75,4 @@ permalink: "projeto/{{ title | slugify }}/"
   </section>
 </main>
 
-{% include "organisms/footer.html" %}
+{% include "organisms/footer/footer.html" %}

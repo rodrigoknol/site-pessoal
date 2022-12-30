@@ -1,7 +1,3 @@
-@import "/css/styled/icon.css";
-@import "/css/styled/nav.css";
-@import "/css/styled/tag-container.css";
-
 /* Content */
 .blog {
   display: flex;
