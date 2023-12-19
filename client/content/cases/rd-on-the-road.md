@@ -1,7 +1,7 @@
 ---
 title: Site do RD On the Road 2017
 subtitle: Um site de evento baseado em dados e com foco em conversão
-excerpt: O evento chegou em 2017 a 11 cidades, em todas as 5 regiões do Brasil, e impactou diretamente 5500 pessoas. O projeto me trouxe muito aprendizado e serviu de base para projetos maiores que peguei pela frente.
+excerpt: O evento chegou em 2017 a 11 cidades, em todas as 5 regiões do Brasil, e impactou diretamente 5.500 pessoas. O projeto me trouxe muito aprendizado e serviu de base para projetos maiores que peguei pela frente.
 challenges: Tivemos um prazo de 6 semanas e meia para o projeto estar pronto e lançado. Dentro desse espaço de tempo, planejamos terminar o projeto em 5 semanas e meia para a última semana ficar livre no caso de qualquer emergência (é claro que aconteceu esse dita emergência).
 production: https://web.archive.org/web/20170801003134/http://rdontheroad.com.br/
 layout: case.html
@@ -42,4 +42,4 @@ Foi o meu primeiro projeto com grande foco em SEO (Search Engine Optimization). 
 
 Como o grande objetivo das páginas que estão sendo feitas é vender o evento, foram utilizadas técnicas de CRO - Conversion rate optimization - para otimizar as páginas.
 
-Para desenvolver, só tive acesso ao [Amazon S3](https://aws.amazon.com/pt/s3/) em produção, ou seja, precisava desenvolver o site estático, e me trouxe um primeiro contato com alguma versão “infante” de [JAMStack](https://jamstack.org/). Montei o site usando [Jekyll](https://jekyllrb.com/) e na falta de acesso ao banco de dados, para facilitar a atualização dos times de negócio, o uso de planilhas do google com script como um banco de dados rudimentar que podia atualizar o conteúdo de cidades, datas e palestrantes em tempo real.
+Para desenvolver, só tive acesso ao [Amazon S3](https://aws.amazon.com/pt/s3/) em produção, ou seja, precisava desenvolver o site estático, e me trouxe um primeiro contato com alguma versão “infante” de [JAMStack](https://jamstack.org/), montei o site usando [Jekyll](https://jekyllrb.com/).
