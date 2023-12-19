@@ -2,13 +2,18 @@
   margin: 6rem 0;
   position: relative;
   perspective: 50rem;
+  animation: appear 2s;
 }
 
 .carousel {
   transform-style: preserve-3d;
-  transition: transform 1.2s;
+  transition: transform 0.75s;
   height: 100%;
   width: 100%;
+}
+
+.carousel__slot-wrapper {
+  transform-style: preserve-3d;
   display: block;
 }
 
@@ -46,5 +51,15 @@
     left: 0;
     bottom: initial;
     flex-direction: initial;
+  }
+}
+
+@keyframes appear {
+  0%,
+  25% {
+    filter: opacity(0);
+  }
+  100% {
+    filter: opacity(1);
   }
 }
