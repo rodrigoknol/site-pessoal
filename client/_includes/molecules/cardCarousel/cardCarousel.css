@@ -1,0 +1,6 @@
+:host {
+  position: absolute;
+  backface-visibility: hidden;
+  display: block;
+  width: 100%;
+}

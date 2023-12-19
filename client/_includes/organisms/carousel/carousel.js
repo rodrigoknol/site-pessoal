@@ -1,15 +1,34 @@
 class Carousel extends HTMLElement {
+  selectedIndex = 0;
+  cellSize = 0;
+
   constructor() {
     super();
-    this.selectedIndex = 0;
-    this.cellSize = 0;
     this.template = document.getElementById("carousel-template").content;
-
     const shadowRoot = this.attachShadow({ mode: "open" });
     shadowRoot.appendChild(this.template.cloneNode(true));
-    this.carouselLogic();
-    this.addLogicToButtons();
 
+    this.cellsContainer = [...this.querySelectorAll("custom-card-carousel")];
+    this.cells = this.cellsContainer.map((el) =>
+      el.shadowRoot.querySelector(".carousel__cell")
+    );
+  }
+
+  connectedCallback() {
+    this.addLogicToButtons();
+    this.setBaseHeight();
+    this.carouselLogic();
+    this.setParentHeight();
+  }
+
+  setBaseHeight() {
+    this.cellSize = this.cells.reduce(
+      (size, cell) => Math.max(size, cell.offsetHeight),
+      0
+    );
+  }
+
+  setParentHeight() {
     const carouselParent = this.shadowRoot.querySelector(".carousel__parent");
     carouselParent.style.height = `${this.cellSize}px`;
   }
@@ -29,23 +48,15 @@ class Carousel extends HTMLElement {
   }
 
   carouselLogic() {
-    const cellsContainer = [...this.querySelectorAll("custom-card-carousel")];
-    const cells = cellsContainer.map((el) =>
-      el.shadowRoot.querySelector(".carousel__cell")
-    );
-    this.cellSize = cells.reduce(
-      (size, cell) => Math.max(size, cell.offsetHeight),
-      0
-    );
-    const cellCount = cells.length;
+    const cellCount = this.cells.length;
     const theta = 360 / cellCount;
     const radius = () => this.cellSize / 2 / Math.tan(Math.PI / cellCount);
 
-    cells.forEach((cell, i) => {
+    this.cells.forEach((cell, i) => {
       cell.style.height = `${this.cellSize}px`;
-      cellsContainer[i].style.height = `${this.cellSize}px`;
+      this.cellsContainer[i].style.height = `${this.cellSize}px`;
       const cellAngle = theta * i;
-      cellsContainer[
+      this.cellsContainer[
         i
       ].style.transform = `rotateX(${cellAngle}deg) translateZ(${radius()}px)`;
     });

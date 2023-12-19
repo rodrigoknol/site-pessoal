@@ -6,13 +6,6 @@
   max-height: 40rem;
 }
 
-.carousel__cell {
-  position: absolute;
-  width: 100%;
-  transition: transform 1.2s;
-  backface-visibility: hidden;
-}
-
 .image,
 .image picture,
 .image img {
@@ -27,5 +20,4 @@
   .carousel__image picture {
     display: none;
   }
-  
 }

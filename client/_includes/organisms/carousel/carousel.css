@@ -9,6 +9,7 @@
   transition: transform 1.2s;
   height: 100%;
   width: 100%;
+  display: block;
 }
 
 .carousel__controller {
@@ -37,8 +38,7 @@
 
 @media (max-width: 1300px) {
   .carousel__parent {
-    margin: 6rem 0 3rem 0;
-    perspective: 50rem;
+    perspective: 60rem;
   }
   .carousel__controller {
     top: -5rem;
