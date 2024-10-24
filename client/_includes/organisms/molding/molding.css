@@ -1,6 +1,8 @@
 .molding {
   background: var(--color-blue-50);
   background-image: url("/image/pattern/wave.svg");
+  background-size: auto;
+  background-attachment: fixed;
   margin: var(--base-size);
   margin-bottom: 0;
   padding: 1rem;
@@ -35,7 +37,7 @@
       var(--color-blue-50) 40%
     );
   }
-  
+
   .molding .container {
     -webkit-backdrop-filter: initial;
     backdrop-filter: initial;
